@@ -1,4 +1,4 @@
-## Math 2001: Discrete Mathematics, Logic and Proof, 
+## Math 2001: Discrete Mathematics (with an introduction to logic and proofs) 
 
 ### CU Boulder Spring 2019 (Section 004)
 
