@@ -34,7 +34,6 @@ Changes will be announced during lecture. It is helpful, though not required, to
 - [Learning Outcomes](#learning-outcomes)
 - [Textbook Information](#textbook-information)
 - [Lean Software Information](#lean-software-information)
-- [Writing Intensive Aspects](#writing-intensive-aspects)
 - [Attendance](#attendance)
 - [Code of Conduct and Cheating](#code-of-conduct-and-cheating)
 - [Use of Electronics During Lecture](#use-of-electronics-during-lecture)
@@ -66,15 +65,12 @@ This course emphasizes the reading and writing of mathematical proofs.
 
 ### Learning Outcomes
 
-Students will gain proficiency in reading and writing mathematical proofs, as well as solving
-computational problems.
+Students will learn 
++ the basics of first-order logic;
++ how to write careful and correct pencil and paper proofs of propositions;
++ how to read and write proofs in Gentzen style of natural deduction;
++ how to read and write proofs using the relatively new interactive theorem prover [Lean][].
 
-### Writing Intensive Aspect
-This class will use writing to promote the learning of course materials and written assignments 
-will contribute significantly to the student's grade.  In particular, students will be actively engaged in the reading and writing of formal and informal proofs of mathematical statements.
-
-An important aspect of the writing component that will be elucidated over the course of 
-the semester is the problem of determining what constitutes a mathematical proof and at what level of detail and formality a proof should be presented.  Developing the skills required to determine the appropriate presentation style of mathematical arguments requires a lot of practice and experience; one objective of this course is to give the students an opportunity to gain such experience.
 
 --------------------------------------------------------------------
 ## Textbook Information
@@ -268,3 +264,4 @@ early in the semester in order to have their learning needs appropriately met.
 [Piazza page]: https://piazza.com/colorado/spring2019/math2001/home
 [Piazza signup page]: https://piazza.com/colorado/spring2019/math2001
 [ECCR 131]: https://goo.gl/maps/eEp8v83tWE42
+[Lean]: https://leanprover.github.io/
