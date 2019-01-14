@@ -14,6 +14,7 @@ Go to www.colorado.edu/ftep/ to download the PDF.
 | Jan 14 | course overview; intro to logic | [Ch 1.](https://leanprover.github.io/logic_and_proof/introduction.html)  | |
 | Jan 16 | intro to logic and proof | [Ch 1.](https://leanprover.github.io/logic_and_proof/introduction.html)| |
 | Jan 18 | naive set theory | [Ch 11.](https://leanprover.github.io/logic_and_proof/sets.html) | |
+| | | | |
 | Jan 21 | no class | | |
 | Jan 25 | sets and functions | [Chs 11, 15.](https://leanprover.github.io/logic_and_proof/functions.html)| |
 | Jan 28 | sets and functions | [Ch 15.](https://leanprover.github.io/logic_and_proof/functions.html)| HW 1 due (exercises TBA) |
