@@ -1,10 +1,6 @@
 ﻿# Math 2001 (Sec 4) 
 ## Spring 2019 Schedule
 
-For various religious holidays, go to www.interfaithcalendar.org. 
-
-Go to www.colorado.edu/ftep/ to download the PDF. 
-
 ---
 
 ## Tentative Schedule of Lectures and Homework Assigments
@@ -79,6 +75,11 @@ Go to www.colorado.edu/ftep/ to download the PDF.
 | Apr 15 | Apr 17 | Apr 19 | 
 | Apr 22 | Apr 24 | Apr 26 | 
 | Apr 29 | May1 | May 3  (Reading Day) |
+
+
+For various religious holidays, go to www.interfaithcalendar.org. 
+
+Go to www.colorado.edu/ftep/ to download the PDF. 
 
 
 <!-- Jan. 30 
