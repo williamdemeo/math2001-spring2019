@@ -9,16 +9,52 @@ Go to www.colorado.edu/ftep/ to download the PDF.
 
 ## Tentative Schedule of Lectures and Homework Assigments
 
-| date | topic | references | homework due |
+| date | topic | reading | homework due |
 | --- | --- | --- | --- |
 | Jan 14 | course overview; intro to logic | [Ch 1.](https://leanprover.github.io/logic_and_proof/introduction.html)  | |
-| Jan 16 | intro to logic and proof | [Ch 1.](https://leanprover.github.io/logic_and_proof/introduction.html)| |
-| Jan 18 | naive set theory | [Ch 11.](https://leanprover.github.io/logic_and_proof/sets.html) | |
+| Jan 16 | naive set theory | [Ch 11.](https://leanprover.github.io/logic_and_proof/sets.html) | |
+| Jan 18 | propositional logic | [Ch 2.](https://leanprover.github.io/logic_and_proof/propositional_logic.html)| | 
 | | | | |
 | Jan 21 | no class | | |
-| Jan 25 | sets and functions | [Chs 11, 15.](https://leanprover.github.io/logic_and_proof/functions.html)| |
-| Jan 28 | sets and functions | [Ch 15.](https://leanprover.github.io/logic_and_proof/functions.html)| HW 1 due (exercises TBA) |
-
+| Jan 23 | propositional logic | [Ch 2.](https://leanprover.github.io/logic_and_proof/propositional_logic.html)| |
+| Jan 25 | natural deduction  | [Ch 3.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_propositional_logic.html) |[HW 1](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/hw01.pdf) (due by 1pm) |
+| | | | |
+| Jan 28 | natural deduction | [Ch 3.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_propositional_logic.html) | |
+| Jan 30 | introducing Lean | [Ch 4.](https://leanprover.github.io/logic_and_proof/propositional_logic_in_lean.html) | | |
+| Feb 1 | propositional logic in Lean | [Ch 4.](https://leanprover.github.io/logic_and_proof/propositional_logic_in_lean.html) | HW 2 (tba) |
+| | | | |
+| Feb 4 |  | | |
+| Feb 6 | | | |
+| Feb 8 | | | |
+| | | | |
+| Feb 11 | | | |
+| Feb 13 | | | |
+| Feb 15 | | | |
+| | | | |
+| Feb 18 | | | |
+| Feb 20 | | | |
+| Feb 22 | | | |
+| | | | |
+| Feb 25 | | | |
+| Feb 27 | | | |
+| Mar 1 | | | |
+| | | | |
+| Mar 4 | | | |
+| Mar 6 | | | |
+| Mar 8 | | | |
+| | | | |
+| Mar 11 | | | |
+| Mar 13 | | | |
+| Mar 15 | | | |
+| | | | |
+| Mar 18 | | | |
+| Mar 20 | | | |
+| Mar 22 | | | |
+| | | | |
+| Mar 25 | | | |
+| Mar 27 | | | |
+| Mar 29 | | | |
+| Spring Break | No Classes | | |
 
 ---
 
