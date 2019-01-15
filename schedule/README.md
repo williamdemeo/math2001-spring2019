@@ -1,9 +1,6 @@
 ﻿# Math 2001 (Sec 4) 
-## Spring 2019 Schedule
 
----
-
-## Tentative Schedule of Lectures and Homework Assigments
+## Tentative Schedule of Lectures and Homework Assigments for Spring 2019
 
 | date | topic | reading | homework due |
 | --- | --- | --- | --- |
