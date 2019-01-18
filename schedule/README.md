@@ -4,9 +4,9 @@
 
 | date | topic | reading | homework due |
 | --- | --- | --- | --- |
-| M Jan 14 | course overview; intro to logic | [Ch 1.](https://leanprover.github.io/logic_and_proof/introduction.html)  | |
-| W Jan 16 | naive set theory | [Ch 11.](https://leanprover.github.io/logic_and_proof/sets.html) | |
-| F Jan 18 | | F 9/7  | Prop Logic: rules of inference | **LaP** [Ch 2.](https://leanprover.github.io/logic_and_proof/propositional_logic.html) || 
+| M Jan 14 | Course overview; intro to logic | [Ch 1.](https://leanprover.github.io/logic_and_proof/introduction.html)  | |
+| W Jan 16 | Naive set theory | [Ch 11.](https://leanprover.github.io/logic_and_proof/sets.html) | |
+| F Jan 18 | Prop Logic: rules of inference | **LaP** [Ch 2.](https://leanprover.github.io/logic_and_proof/propositional_logic.html) || 
 | | | | |
 | M Jan 21 | no class | | |
 | W Jan 23 | Prop Logic: language | **LaP** [Ch 2.](https://leanprover.github.io/logic_and_proof/propositional_logic.html) | |
