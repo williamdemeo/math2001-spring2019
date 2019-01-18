@@ -4,19 +4,20 @@
 
 | date | topic | reading | homework due |
 | --- | --- | --- | --- |
-| Jan 14 | course overview; intro to logic | [Ch 1.](https://leanprover.github.io/logic_and_proof/introduction.html)  | |
-| Jan 16 | naive set theory | [Ch 11.](https://leanprover.github.io/logic_and_proof/sets.html) | |
-| Jan 18 | propositional logic | [Ch 2.](https://leanprover.github.io/logic_and_proof/propositional_logic.html)| | 
+| M Jan 14 | course overview; intro to logic | [Ch 1.](https://leanprover.github.io/logic_and_proof/introduction.html)  | |
+| W Jan 16 | naive set theory | [Ch 11.](https://leanprover.github.io/logic_and_proof/sets.html) | |
+| F Jan 18 | | F 9/7  | Prop Logic: rules of inference | **LaP** [Ch 2.](https://leanprover.github.io/logic_and_proof/propositional_logic.html) || 
 | | | | |
-| Jan 21 | no class | | |
-| Jan 23 | propositional logic | [Ch 2.](https://leanprover.github.io/logic_and_proof/propositional_logic.html)| |
-| Jan 25 | natural deduction  | [Ch 3.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_propositional_logic.html) |[HW 1](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/hw01.pdf) (due by 1pm) |
+| M Jan 21 | no class | | |
+| W Jan 23 | Prop Logic: language | **LaP** [Ch 2.](https://leanprover.github.io/logic_and_proof/propositional_logic.html) | |
+| F Jan 25 | Nat Ded: derivations | [Ch 3.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_propositional_logic.html) |[HW 1 (hw01.pdf)](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/hw01.pdf)|
 | | | | |
-| Jan 28 | natural deduction | [Ch 3.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_propositional_logic.html) | |
-| Jan 30 | introducing Lean | [Ch 4.](https://leanprover.github.io/logic_and_proof/propositional_logic_in_lean.html) | | |
-| Feb 1 | propositional logic in Lean | [Ch 4.](https://leanprover.github.io/logic_and_proof/propositional_logic_in_lean.html) | HW 2 (tba) |
+| M Jan 28 | Nat Ded: forward and backward reasoning | [Ch 3.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_propositional_logic.html) | |
+| W Jan 30 | Nat Ded: reasoning by cases, logical ids | [Ch 3.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_propositional_logic.html) |  |
+| F Feb 1 | Lean: propositions and proofs | [Ch 4.](https://leanprover.github.io/logic_and_proof/propositional_logic_in_lean.html) | [HW 2 (hw02.pdf)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw02.pdf) |
 | | | | |
-| Feb 4 |  | | |
+| Feb 4 | Lean: nat ded proofs, forward reasoning | [Ch 4.](https://leanprover.github.io/logic_and_proof/propositional_logic_in_lean.html) | |
+|  |  | | |
 | Feb 6 | | | |
 | Feb 8 | | | |
 | | | | |
