@@ -6,10 +6,10 @@
 | --- | --- | --- | --- |
 | M Jan 14 | Course overview; intro to logic | [Ch 1.](https://leanprover.github.io/logic_and_proof/introduction.html)  | |
 | W Jan 16 | Naive set theory | [Ch 11.](https://leanprover.github.io/logic_and_proof/sets.html) | |
-| F Jan 18 | Prop Logic: rules of inference | **LaP** [Ch 2.](https://leanprover.github.io/logic_and_proof/propositional_logic.html) || 
+| F Jan 18 | Prop Logic: rules of inference | [Ch 2.](https://leanprover.github.io/logic_and_proof/propositional_logic.html) || 
 | | | | |
 | M Jan 21 | no class | | |
-| W Jan 23 | Prop Logic: language | **LaP** [Ch 2.](https://leanprover.github.io/logic_and_proof/propositional_logic.html) | |
+| W Jan 23 | Prop Logic: language | [Ch 2.](https://leanprover.github.io/logic_and_proof/propositional_logic.html) | |
 | F Jan 25 | Nat Ded: derivations | [Ch 3.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_propositional_logic.html) |[HW 1 (hw01.pdf)](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/hw01.pdf)|
 | | | | |
 | M Jan 28 | Nat Ded: forward and backward reasoning | [Ch 3.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_propositional_logic.html) | |
