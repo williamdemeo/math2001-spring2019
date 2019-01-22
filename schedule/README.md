@@ -22,48 +22,48 @@
 | | | | |
 | M Feb 11 | Classical logic: proof by contradiction | [Ch 5.](https://leanprover.github.io/logic_and_proof/classical_reasoning.html) | | 
 | W Feb 13 | Classical logic: other classical principles| [Ch 5.](https://leanprover.github.io/logic_and_proof/classical_reasoning.html) | | 
-| F Feb 15 | Semantics: truth values, assignments | [Ch 6.](https://leanprover.github.io/logic_and_proof/semantics_of_propositional_logic.html) | HW 4: teamwork 1 (tba) | 
+| F Feb 15 | Semantics: truth values, assignments | [Ch 6.](https://leanprover.github.io/logic_and_proof/semantics_of_propositional_logic.html) | **Teamwork 1** (tba) | 
 | | | | |
 | M Feb 18 | Semantics: truth tables | [Ch 6.](https://leanprover.github.io/logic_and_proof/semantics_of_propositional_logic.html) | |
 | W Feb 20 | Semantics: Soundness and completeness| [Ch 6.](https://leanprover.github.io/logic_and_proof/semantics_of_propositional_logic.html) |  |
-| F Feb 22 | Review and catch-up | | HW 5 (tba) |
+| F Feb 22 | Review and catch-up | | HW 4 (tba) |
 | | | | |
 | M Feb 25 | Review for Exam 1 | | |
 | W Feb 27 | **Exam 1** | **Chs 1--6, 11** | |
-| F Mar 1 | 1st Order Logic (FOM); functions, predicates, relations | [Ch 7.](https://leanprover.github.io/logic_and_proof/first_order_logic.html)  | |
+| F Mar 1 | 1st Order Logic (FOM); functions, predicates, relations | [Ch 7.](https://leanprover.github.io/logic_and_proof/first_order_logic.html)  |  |
 | | | | |
-| F Mar 4 | Quantifiers, relativization, sorts, equality | [Ch 7.](https://leanprover.github.io/logic_and_proof/first_order_logic.html)   |  |
+| M Mar 4 | Quantifiers, relativization, sorts, equality | [Ch 7.](https://leanprover.github.io/logic_and_proof/first_order_logic.html)   |  |
 | W Mar 6 | Natural Deduction; rules of inference | [Ch 8.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_first_order_logic.html)  | | 
-| F Mar 8 | Equality, counterexamples, relativization | [Ch 8.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_first_order_logic.html#equality)  | HW 6 (tba) |
+| F Mar 8 | Equality, counterexamples, relativization | [Ch 8.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_first_order_logic.html)  | HW 5 (tba) |
 | | | | |
 | M Mar 11 | FOL in Lean; functions, predicates, relations | [Ch 9.](https://leanprover.github.io/logic_and_proof/first_order_logic_in_lean.html) | |
 | W Mar 13 | Using quantifiers in Lean | [Ch 9.](https://leanprover.github.io/logic_and_proof/first_order_logic_in_lean.html)  | | 
-| F Mar 15 | Equality and calculational proofs in Lean | [Ch 9.](https://leanprover.github.io/logic_and_proof/first_order_logic_in_lean.html) | HW 7 (tba) |
+| F Mar 15 | Equality and calculational proofs in Lean | [Ch 9.](https://leanprover.github.io/logic_and_proof/first_order_logic_in_lean.html) | HW 6 (tba) |
 | | | | |
 | M Mar 18 | Sets: cartesian product, power set | [Ch 11.](https://leanprover.github.io/logic_and_proof/sets.html)   | |
 | W Mar 20 | Sets: indexed families | [Ch 11.](https://leanprover.github.io/logic_and_proof/sets.html)   | |
-| F Mar 22 | Sets in Lean: basics, identities | [Ch 12.](https://leanprover.github.io/logic_and_proof/sets_in_lean.html) |  HW 8: teamwork 2; tba) |
+| F Mar 22 | Sets in Lean: basics, identities | [Ch 12.](https://leanprover.github.io/logic_and_proof/sets_in_lean.html) |  **Teamwork 2** (tba) |
 | | | | |
 | M Mar 25 | Sets in Lean: indexed families, power sets | [Ch 12.](https://leanprover.github.io/logic_and_proof/sets_in_lean.html) | |  
-| W Mar 27 | Review and catch up | |  HW 9 (tba) |
+| W Mar 27 | Review and catch up | |  HW 7 (tba) |
 | F Mar 29 | **Exam 2** | **Chs 7, 8, 9, 11, 12** | | 
 | | | | |
 | Spring Break | No Classes | | |
 | M Apr 1 | Semantics of FOL; interpretations, truth in a model | [Ch 10.](https://leanprover.github.io/logic_and_proof/semantics_of_first_order_logic.html) | |
 | W Apr 3  | Validity, consequence, soundness & completeness | [Ch 10.](https://leanprover.github.io/logic_and_proof/semantics_of_first_order_logic.html#validity-and-logical-consequence) | |
-| F Apr 5  | Relations; orders, equivalences | [Ch 13.](https://leanprover.github.io/logic_and_proof/relations.html) | HW 10: teamwork 3 (tba) |
+| F Apr 5  | Relations; orders, equivalences | [Ch 13.](https://leanprover.github.io/logic_and_proof/relations.html) | HW 8 (tba) |
 | | | | |
 | M Apr 8  | Relations in Lean; orders, equivalences |  [Ch 14.](https://leanprover.github.io/logic_and_proof/relations_in_lean.html) | 
 | W Apr 10 | Functions | [Ch 15.](https://leanprover.github.io/logic_and_proof/functions.html) | |
-| F Apr 12 | Functions in Lean | [Ch 16.](https://leanprover.github.io/logic_and_proof/functions_in_lean.html)  | HW 11 (tba) |
+| F Apr 12 | Functions in Lean | [Ch 16.](https://leanprover.github.io/logic_and_proof/functions_in_lean.html)  | **Teamwork 3** (tba) |
 | | | | |
 | M Apr 15 | Natural Numbers and Induction | [Ch 17.](https://leanprover.github.io/logic_and_proof/the_natural_numbers_and_induction.html) | 
 | W Apr 17 | Recursion | [Ch 17.](https://leanprover.github.io/logic_and_proof/the_natural_numbers_and_induction.html) | |
-| F Apr 19 | Natural numbers and induction in Lean |  [Ch 18.](https://leanprover.github.io/logic_and_proof/the_natural_numbers_and_induction_in_lean.html) | HW 12 (tba) |
+| F Apr 19 | Natural numbers and induction in Lean |  [Ch 18.](https://leanprover.github.io/logic_and_proof/the_natural_numbers_and_induction_in_lean.html) | HW 9 (tba) |
 | | | | |
 | M Apr 22 | Recursion in Lean | [Ch 18.](https://leanprover.github.io/logic_and_proof/the_natural_numbers_and_induction_in_lean.html) | |
 | W Apr 24 | Arithmetic operations in Lean | [Ch 18.](https://leanprover.github.io/logic_and_proof/the_natural_numbers_and_induction_in_lean.html) | |
-| F Apr 26 | | | HW 13: teamwork 4 (tba) |
+| F Apr 26 | | | **Teamwork 4** (tba) |
 | | | | |
 | M Apr 29 | Review and catch up    | | |
 | W May 1  | Review for final exam  | | |
