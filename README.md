@@ -6,10 +6,10 @@
 
 ## Lecture Information
 
-**Lecture Times and Location:** 1--1:50pm MWF in [ECCR 131]   
-**Final Exam Date and Time:** Monday, 6 May 2019, 1:30--4pm   
-**Course Webpage:** [github.com/williamdemeo/math2001-spring2019](https://github.com/williamdemeo/math2001-spring2019)   
-**Piazza Webpage:** [piazza.com/colorado/spring2019/math2001/home](https://piazza.com/colorado/spring2019/math2001/home)    
+**Lecture Times and Location:** 1--1:50pm MWF in [ECCR 131][]\
+**Final Exam Date and Time:** Monday, 6 May 2019, 1:30--4pm\
+**Course Webpage:** [github.com/williamdemeo/math2001-spring2019](https://github.com/williamdemeo/math2001-spring2019)\
+**Piazza Webpage:** [piazza.com/colorado/spring2019/math2001/home](https://piazza.com/colorado/spring2019/math2001/home)\
 **Course Schedule:** 
 [github.com/williamdemeo/math2001-spring2019/schedule](https://github.com/williamdemeo/math2001-spring2019/tree/master/schedule)
 
