@@ -19,7 +19,7 @@
 **Instructor:**  Dr. William DeMeo   
 **Email:** [williamdemeo at gmail](mailto:williamdemeo@gmail.com?subject=MATH2001: (replace-this-text-with-informative-subject-description))    
 **Office:** MATH BLDG Room 202   
-**Office hours:** Mondays 2:15--3:30pm, Wednesdays 3:45--5pm
+**Office hours:** Tuesdays and Wednesdays 11:30--12:45pm
 
 **Remarks about office hours:**
 The regularly scheduled office hours listed above are subject to change.
