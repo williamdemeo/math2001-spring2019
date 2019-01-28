@@ -22,7 +22,7 @@
 | | | | |
 | M Feb 11 | Classical logic: proof by contradiction | [Ch 5.](https://leanprover.github.io/logic_and_proof/classical_reasoning.html) | | 
 | W Feb 13 | Classical logic: other classical principles| [Ch 5.](https://leanprover.github.io/logic_and_proof/classical_reasoning.html) | | 
-| F Feb 15 | Semantics: truth values, assignments | [Ch 6.](https://leanprover.github.io/logic_and_proof/semantics_of_propositional_logic.html) | [Teamwork 1](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/tw1.lean) [(tw1.lean)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/tw1.lean) | 
+| F Feb 15 | Semantics: truth values, assignments | [Ch 6.](https://leanprover.github.io/logic_and_proof/semantics_of_propositional_logic.html) | [Teamwork 1](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/teamwork1.lean) [(teamwork1.lean)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/teamwork1.lean) | 
 | | | | |
 | M Feb 18 | Semantics: truth tables | [Ch 6.](https://leanprover.github.io/logic_and_proof/semantics_of_propositional_logic.html) | |
 | W Feb 20 | Semantics: Soundness and completeness| [Ch 6.](https://leanprover.github.io/logic_and_proof/semantics_of_propositional_logic.html) |  |
