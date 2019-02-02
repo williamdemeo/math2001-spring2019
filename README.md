@@ -19,7 +19,7 @@
 **Instructor:**  Dr. William DeMeo   
 **Email:** [williamdemeo at gmail](mailto:williamdemeo@gmail.com?subject=MATH2001: (replace-this-text-with-informative-subject-description))    
 **Office:** MATH BLDG Room 202   
-**Office hours:** Tuesdays and Wednesdays 11:30--12:45pm
+**Office hours:** Mondays 2:15--3:30pm, Wednesdays 3:45--5pm
 
 **Remarks about office hours:**
 The regularly scheduled office hours listed above are subject to change.
@@ -156,17 +156,17 @@ performance.
 ## Exams
 **All exams take place in our usual classroom**, [ECCR 131][].
 
-+ **MIDTERM EXAM 1**    
-**Topics:** TBD
-**DATE:** TBD
++ **MIDTERM EXAM 1**  
+**Topics:** Chs 1--6, 11, 15  
+**DATE:**  Wed, 27 Feb 2019
   
-+ **MIDTERM EXAM 2**      
-**Topics:** TBD
-**DATE:** TBD
++ **MIDTERM EXAM 2**  
+**Topics:** Chs 7, 8, 9, 11, 12, 15  
+**DATE:** Fri, 5 Apr 2019  
 
 + **FINAL EXAM** (cumulative)  
-**DATE:** Monday, May 6, 2019   
-**TIME:** 1:30--4pm   
+**DATE:** Mon, 6 May 2019  
+**TIME:** 1:30--4pm
 
 
 In accordance with university policy, **the final exam must be taken by all students at the scheduled time in the usual classroom.** *Do not make plans which would have you depart campus before the scheduled final exam date.*
