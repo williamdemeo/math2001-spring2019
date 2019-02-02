@@ -12,24 +12,24 @@
 | W Jan 23 | Prop Logic: language | [Ch 2.](https://leanprover.github.io/logic_and_proof/propositional_logic.html) | |
 | F Jan 25 | Nat Ded: derivations | [Ch 3.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_propositional_logic.html) | |
 | | | | |
-| M Jan 28 | Nat Ded: forward and backward reasoning | [Ch 3.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_propositional_logic.html) | [HW 1](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/hw01.pdf) [(hw01.pdf)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw01.pdf)|
-| W Jan 30 | Nat Ded: reasoning by cases, logical ids | [Ch 3.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_propositional_logic.html) |  |
-| F Feb 1 | Lean: propositions and proofs | [Ch 4.](https://leanprover.github.io/logic_and_proof/propositional_logic_in_lean.html) | [HW 2](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/hw02.pdf) [(hw02.pdf)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw02.pdf) |
+| M Jan 28 | Nat Ded: forward and backward reasoning | [Ch 3.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_propositional_logic.html) | [HW 1 (hw01.pdf)](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/hw01.pdf)|
+| W Jan 30 | Nat Ded: reasoning by cases, logical ids | [Ch 3.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_propositional_logic.html) | |
+| F Feb 1 | Lean: propositions and proofs | [Ch 4.](https://leanprover.github.io/logic_and_proof/propositional_logic_in_lean.html) | [HW 2 (hw02.pdf)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw02.pdf) |
 | | | | |
 | M Feb 4 | Lean: nat ded proofs, forward reasoning | [Ch 4.](https://leanprover.github.io/logic_and_proof/propositional_logic_in_lean.html) | |
-| W Feb 6 | Lean: definitions, theorems, additional syntax| [Ch 4.](https://leanprover.github.io/logic_and_proof/propositional_logic_in_lean.html)  | [HW 3](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/hw03.pdf) [(hw03.pdf)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw03.pdf) | 
+| W Feb 6 | Lean: definitions, theorems, additional syntax| [Ch 4.](https://leanprover.github.io/logic_and_proof/propositional_logic_in_lean.html)  |HW 3  (tba) | 
 | F Feb 8 | Classical logic: LEM | [Ch 5.](https://leanprover.github.io/logic_and_proof/classical_reasoning.html) | |
 | | | | |
 | M Feb 11 | Classical logic: proof by contradiction | [Ch 5.](https://leanprover.github.io/logic_and_proof/classical_reasoning.html) | | 
 | W Feb 13 | Classical logic: other classical principles| [Ch 5.](https://leanprover.github.io/logic_and_proof/classical_reasoning.html) | | 
-| F Feb 15 | Semantics: truth values, assignments | [Ch 6.](https://leanprover.github.io/logic_and_proof/semantics_of_propositional_logic.html) | [Teamwork 1](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/teamwork1.lean) [(teamwork1.lean)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/teamwork1.lean) | 
+| F Feb 15 | Semantics: truth values, assignments | [Ch 6.](https://leanprover.github.io/logic_and_proof/semantics_of_propositional_logic.html) | **Teamwork 1** (tba) | 
 | | | | |
 | M Feb 18 | Semantics: truth tables | [Ch 6.](https://leanprover.github.io/logic_and_proof/semantics_of_propositional_logic.html) | |
 | W Feb 20 | Semantics: Soundness and completeness| [Ch 6.](https://leanprover.github.io/logic_and_proof/semantics_of_propositional_logic.html) |  |
-| F Feb 22 | Review and catch-up | | [HW 4](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/hw04.pdf) [(hw04.pdf)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw04.pdf) [(hw04.lean)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw04.lean)|
+| F Feb 22 | Review and catch-up | | HW 4 (tba) |
 | | | | |
 | M Feb 25 | Review for Exam 1 | | |
-| W Feb 27 | **Exam 1** | **Chs 1--6, 11** | |
+| W Feb 27 | **Exam 1** | **Chs 1--6, 11, 15** | |
 | F Mar 1 | 1st Order Logic (FOM); functions, predicates, relations | [Ch 7.](https://leanprover.github.io/logic_and_proof/first_order_logic.html)  |  |
 | | | | |
 | M Mar 4 | Quantifiers, relativization, sorts, equality | [Ch 7.](https://leanprover.github.io/logic_and_proof/first_order_logic.html)   |  |
@@ -44,30 +44,27 @@
 | W Mar 20 | Sets: indexed families | [Ch 11.](https://leanprover.github.io/logic_and_proof/sets.html)   | |
 | F Mar 22 | Sets in Lean: basics, identities | [Ch 12.](https://leanprover.github.io/logic_and_proof/sets_in_lean.html) |  **Teamwork 2** (tba) |
 | | | | |
-| M Mar 25 | Sets in Lean: indexed families, power sets | [Ch 12.](https://leanprover.github.io/logic_and_proof/sets_in_lean.html) | |  
-| W Mar 27 | Review and catch up | |  HW 7 (tba) |
-| F Mar 29 | **Exam 2** | **Chs 7, 8, 9, 11, 12** | | 
+| Mar 25-9 | Spring Break | No Classes | |
 | | | | |
-| Spring Break | No Classes | | |
-| M Apr 1 | Semantics of FOL; interpretations, truth in a model | [Ch 10.](https://leanprover.github.io/logic_and_proof/semantics_of_first_order_logic.html) | |
-| W Apr 3  | Validity, consequence, soundness & completeness | [Ch 10.](https://leanprover.github.io/logic_and_proof/semantics_of_first_order_logic.html#validity-and-logical-consequence) | |
-| F Apr 5  | Relations; orders, equivalences | [Ch 13.](https://leanprover.github.io/logic_and_proof/relations.html) | HW 8 (tba) |
+| M Apr 1 | Sets in Lean: indexed families, power sets | [Ch 12.](https://leanprover.github.io/logic_and_proof/sets_in_lean.html) | |  
+| W Apr 3 | Review and catch up | |  HW 7 (tba) |
+| F Apr 5 | **Exam 2** | **Chs 7, 8, 9, 11, 12, 15** | | 
 | | | | |
-| M Apr 8  | Relations in Lean; orders, equivalences |  [Ch 14.](https://leanprover.github.io/logic_and_proof/relations_in_lean.html) | 
-| W Apr 10 | Functions | [Ch 15.](https://leanprover.github.io/logic_and_proof/functions.html) | |
-| F Apr 12 | Functions in Lean | [Ch 16.](https://leanprover.github.io/logic_and_proof/functions_in_lean.html)  | **Teamwork 3** (tba) |
+| M Apr 8 | Semantics of FOL; interpretations, truth in a model | [Ch 10.](https://leanprover.github.io/logic_and_proof/semantics_of_first_order_logic.html) | |
+| W Apr 10  | Validity, consequence, soundness & completeness | [Ch 10.](https://leanprover.github.io/logic_and_proof/semantics_of_first_order_logic.html#validity-and-logical-consequence) | |
+| F Apr 12 | Relations; orders, equivalences | [Ch 13.](https://leanprover.github.io/logic_and_proof/relations.html) | HW 8 (tba) |
 | | | | |
-| M Apr 15 | Natural Numbers and Induction | [Ch 17.](https://leanprover.github.io/logic_and_proof/the_natural_numbers_and_induction.html) | 
-| W Apr 17 | Recursion | [Ch 17.](https://leanprover.github.io/logic_and_proof/the_natural_numbers_and_induction.html) | |
-| F Apr 19 | Natural numbers and induction in Lean |  [Ch 18.](https://leanprover.github.io/logic_and_proof/the_natural_numbers_and_induction_in_lean.html) | HW 9 (tba) |
+| M Apr 15  | Relations in Lean; orders, equivalences |  [Ch 14.](https://leanprover.github.io/logic_and_proof/relations_in_lean.html) | 
+| W Apr 17 | Functions | [Ch 15.](https://leanprover.github.io/logic_and_proof/functions.html) | |
+| F Apr 19 | Functions in Lean | [Ch 16.](https://leanprover.github.io/logic_and_proof/functions_in_lean.html)  | **Teamwork 3** (tba) |
 | | | | |
-| M Apr 22 | Recursion in Lean | [Ch 18.](https://leanprover.github.io/logic_and_proof/the_natural_numbers_and_induction_in_lean.html) | |
-| W Apr 24 | Arithmetic operations in Lean | [Ch 18.](https://leanprover.github.io/logic_and_proof/the_natural_numbers_and_induction_in_lean.html) | |
-| F Apr 26 | | | **Teamwork 4** (tba) |
+| M Apr 22 | Natural Numbers and Induction | [Ch 17.](https://leanprover.github.io/logic_and_proof/the_natural_numbers_and_induction.html) | 
+| W Apr 24 | Recursion | [Ch 17.](https://leanprover.github.io/logic_and_proof/the_natural_numbers_and_induction.html) | |
+| F Apr 26 | Natural numbers and induction in Lean |  [Ch 18.](https://leanprover.github.io/logic_and_proof/the_natural_numbers_and_induction_in_lean.html) | HW 9 (tba) |
 | | | | |
-| M Apr 29 | Review and catch up    | | |
-| W May 1  | Review for final exam  | | |
-| F May 3  | Reading Day | (no class) | |
+| M Apr 29 | Recursion in Lean | [Ch 18.](https://leanprover.github.io/logic_and_proof/the_natural_numbers_and_induction_in_lean.html) | |
+| W May 1 | Arithmetic operations in Lean | [Ch 18.](https://leanprover.github.io/logic_and_proof/the_natural_numbers_and_induction_in_lean.html) | |
+| F May 3 |  Reading Day | (no class) | **Teamwork 4** (tba) |
 | | | | |
 | M May 6 | **Final Exam**|  1:30--4pm | [ECCR 131](https://goo.gl/maps/eEp8v83tWE42) |
 
@@ -96,8 +93,7 @@
 | Mar 4 | Mar 6 | Mar 8 |
 | Mar 11 | Mar 13 | Mar 15 |
 | Mar 18 | Mar 20 | Mar 22 |
-| Mar 25 | Mar 27 | Mar 29 |
-| Spring Break | No Classes | |
+| Mar 25--29 | Spring Break | No Classes | 
 | Apr 1 | Apr 3 | Apr 5 |     
 | Apr 8 | Apr 10 | Apr 12 | 
 | Apr 15 | Apr 17 | Apr 19 | 
