@@ -12,21 +12,21 @@
 | W Jan 23 | Prop Logic: language | [Ch 2.](https://leanprover.github.io/logic_and_proof/propositional_logic.html) | |
 | F Jan 25 | Nat Ded: derivations | [Ch 3.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_propositional_logic.html) | |
 | | | | |
-| M Jan 28 | Nat Ded: forward and backward reasoning | [Ch 3.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_propositional_logic.html) | [HW 1 (hw01.pdf)](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/hw01.pdf)|
+| M Jan 28 | Nat Ded: forward and backward reasoning | [Ch 3.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_propositional_logic.html) | [HW 1](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/hw01.pdf) [(hw01.pdf)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw01.pdf) |
 | W Jan 30 | Nat Ded: reasoning by cases, logical ids | [Ch 3.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_propositional_logic.html) | |
-| F Feb 1 | Lean: propositions and proofs | [Ch 4.](https://leanprover.github.io/logic_and_proof/propositional_logic_in_lean.html) | [HW 2 (hw02.pdf)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw02.pdf) |
+| F Feb 1 | Lean: propositions and proofs | [Ch 4.](https://leanprover.github.io/logic_and_proof/propositional_logic_in_lean.html) | [HW 2](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/hw02.pdf) [(hw02.pdf)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw02.pdf) |
 | | | | |
 | M Feb 4 | Lean: nat ded proofs, forward reasoning | [Ch 4.](https://leanprover.github.io/logic_and_proof/propositional_logic_in_lean.html) | |
-| W Feb 6 | Lean: definitions, theorems, additional syntax| [Ch 4.](https://leanprover.github.io/logic_and_proof/propositional_logic_in_lean.html)  |HW 3  (tba) | 
-| F Feb 8 | Classical logic: LEM | [Ch 5.](https://leanprover.github.io/logic_and_proof/classical_reasoning.html) | |
+| W Feb 6 | Lean: definitions, theorems, additional syntax| [Ch 4.](https://leanprover.github.io/logic_and_proof/propositional_logic_in_lean.html)  | | 
+| F Feb 8 | Classical logic: LEM | [Ch 5.](https://leanprover.github.io/logic_and_proof/classical_reasoning.html) | [HW 3](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/hw03.pdf) [(hw03.pdf)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw03.pdf) |
 | | | | |
 | M Feb 11 | Classical logic: proof by contradiction | [Ch 5.](https://leanprover.github.io/logic_and_proof/classical_reasoning.html) | | 
 | W Feb 13 | Classical logic: other classical principles| [Ch 5.](https://leanprover.github.io/logic_and_proof/classical_reasoning.html) | | 
-| F Feb 15 | Semantics: truth values, assignments | [Ch 6.](https://leanprover.github.io/logic_and_proof/semantics_of_propositional_logic.html) | **Teamwork 1** (tba) | 
+| F Feb 15 | Semantics: truth values, assignments | [Ch 6.](https://leanprover.github.io/logic_and_proof/semantics_of_propositional_logic.html) | [Teamwork 1](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/teamwork1.lean) [(teamwork1.lean)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/teamwork1.lean) | 
 | | | | |
 | M Feb 18 | Semantics: truth tables | [Ch 6.](https://leanprover.github.io/logic_and_proof/semantics_of_propositional_logic.html) | |
 | W Feb 20 | Semantics: Soundness and completeness| [Ch 6.](https://leanprover.github.io/logic_and_proof/semantics_of_propositional_logic.html) |  |
-| F Feb 22 | Review and catch-up | | HW 4 (tba) |
+| F Feb 22 | Review and catch-up | | [(hw04.pdf)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw04.pdf) [(hw04.lean)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw04.lean) |
 | | | | |
 | M Feb 25 | Review for Exam 1 | | |
 | W Feb 27 | **Exam 1** | **Chs 1--6, 11, 15** | |
