@@ -34,11 +34,11 @@
 | | | | |
 | M Mar 4 | Quantifiers, relativization, sorts, equality | [Ch 7.](https://leanprover.github.io/logic_and_proof/first_order_logic.html)   |  |
 | W Mar 6 | Natural Deduction; rules of inference | [Ch 8.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_first_order_logic.html)  | | 
-| F Mar 8 | Equality, counterexamples, relativization | [Ch 8.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_first_order_logic.html)  | HW 5 (tba) |
+| F Mar 8 | Equality, counterexamples, relativization | [Ch 8.](https://leanprover.github.io/logic_and_proof/natural_deduction_for_first_order_logic.html)  | [HW 5](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/hw05.pdf) [(hw05.pdf)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw05.pdf) |
 | | | | |
 | M Mar 11 | FOL in Lean; functions, predicates, relations | [Ch 9.](https://leanprover.github.io/logic_and_proof/first_order_logic_in_lean.html) | |
 | W Mar 13 | Using quantifiers in Lean | [Ch 9.](https://leanprover.github.io/logic_and_proof/first_order_logic_in_lean.html)  | | 
-| F Mar 15 | Equality and calculational proofs in Lean | [Ch 9.](https://leanprover.github.io/logic_and_proof/first_order_logic_in_lean.html) | HW 6 (tba) |
+| F Mar 15 | Equality and calculational proofs in Lean | [Ch 9.](https://leanprover.github.io/logic_and_proof/first_order_logic_in_lean.html) | [HW 6](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/hw06.pdf) [(hw06.pdf)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw06.pdf) |
 | | | | |
 | M Mar 18 | Sets: cartesian product, power set | [Ch 11.](https://leanprover.github.io/logic_and_proof/sets.html)   | |
 | W Mar 20 | Sets: indexed families | [Ch 11.](https://leanprover.github.io/logic_and_proof/sets.html)   | |
