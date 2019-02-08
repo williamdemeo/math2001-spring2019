@@ -1,0 +1,13 @@
+*~
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+bop-sched.md
+logic_and_proof.*
+lecture-time-location.md
+README-scratch.md
+Enderton*
+BBC*
+sp19_calendar*
