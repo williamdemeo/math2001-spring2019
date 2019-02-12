@@ -1,4 +1,4 @@
-## Math 2001 Lean Information
+# Math 2001 Lean Information
 
 The files in this subdirectory contain some of the Lean examples we discuss in lecture.
 They are based on the examples presented in the book 
@@ -18,9 +18,23 @@ In fact, it may even be possible to complete all the Lean homework assignments u
 
 ---
 
-### Important Information
+## Important Information
 
 It is recommended that each student install and use Lean on their own personal computer (instead of simply using the web browser interface).
+
+To download Lean, go to [https://github.com/leanprover/lean/releases/tag/v3.4.2](https://github.com/leanprover/lean/releases/tag/v3.4.2) and download the binary that matches your operating system.
+
+### Windows Users
+
+First download the zip file as just described.  Then see [this page](https://xenaproject.wordpress.com/2017/09/26/installing-lean-on-windows-from-scratch/) which provides nice and detailed instructions explaining how to download and install both [VS Code] and [Lean] on a Windows machine.
+
+(Of course, you should not follow the first instruction on that page, which is to download an older version of Lean.)
+
+To reiterate, here is the link to instructions for installing Lean **if you are a MS Windows user**:
+
+[https://xenaproject.wordpress.com/2017/09/26/installing-lean-on-windows-from-scratch/](https://xenaproject.wordpress.com/2017/09/26/installing-lean-on-windows-from-scratch/)
+
+### Other important info
 
 All the Lean code we look at this semester will work fine in the web browser version of Lean. Up to Chapter 11, the same should be true for locally installed version of Lean (say, on your laptop). However, once we get to Chapter 12, we will need to import a standard 
 Lean library by placing the following line *at the top* of your .lean file (this does not apply to the browser interface to Lean):
