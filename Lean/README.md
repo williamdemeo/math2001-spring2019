@@ -56,7 +56,9 @@ Here is a summary of the steps that I *think* will work on Windows (but I cannot
 
 More information can be found on [this page](https://xenaproject.wordpress.com/2017/09/26/installing-lean-on-windows-from-scratch/) which provides nice and detailed instructions explaining how to download and install both [VS Code] and [Lean] on a Windows machine. (Of course, you should not follow the first instruction on that page, which is to download an older version of Lean.)
 
-### Other important info
+---
+
+## Other important info
 
 All the Lean code we look at this semester will work fine in the web browser version of Lean. Up to Chapter 11, the same should be true for locally installed version of Lean (say, on your laptop). However, once we get to Chapter 12, we will need to import a standard 
 Lean library by placing the following line *at the top* of your .lean file (this does not apply to the browser interface to Lean):
