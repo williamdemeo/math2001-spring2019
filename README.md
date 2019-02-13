@@ -35,7 +35,7 @@ Changes will be announced during lecture. It is helpful, though not required, to
 - [Textbook Information](#textbook-information)
 - [Lean Software Information](#lean-software-information)
 - [Attendance](#attendance)
-- [Code of Conduct and Cheating](#code-of-conduct-and-cheating)
+- [Code of Conduct](#code-of-conduct)
 - [Use of Electronics During Lecture](#use-of-electronics-during-lecture)
 - [Grading Policy](#grading-policy)
 - [Exams](#exams)
