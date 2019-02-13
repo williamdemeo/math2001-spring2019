@@ -1,20 +1,24 @@
 # Math 2001 Lean Information
 
-The files in this subdirectory contain some of the Lean examples we discuss in lecture.
-They are based on the examples presented in the book 
-[Logic and Proof](https://leanprover.github.io/logic_and_proof/), 
-and students are advised to consult the book when trying to understand the examples, 
-since they are well documented there.
+This page contains information about Lean for my students.
 
-For more information about the Lean proof assistant, head over to the
+I may also collect some files in this subdirectory that contain Lean examples that we discuss in lecture.  The examples we do in class are based on the examples presented in the book [Logic and Proof](https://leanprover.github.io/logic_and_proof/) and students are advised to consult the book when trying to understand the examples, since they are well documented there.
+
+## Do I need to install Lean on my own computer?
+
+When reading the online version of the textbook, available at [Logic and Proof](https://leanprover.github.io/logic_and_proof/), you will notice that each example of Lean code is presented inside a box
+that contains a "try it" link at the top right.  Clicking this link launches a new browser tab running a version of Lean and containing a window into which Lean commands can be entered and executed 
+(or "type checked").
+
+It may be possible to complete all the Lean homework assignments using only the browser-based version.  However, students who take the time to download Lean on their own computers early on in the semester will probably have an easier time completing the teamwork and the few Lean exercises that appear on some of the homeworks.
+
+Homework assignments that involve Lean will be mostly team-based, and it is recommended that at least one person on each team should have a full version of Lean installed on their own computer.
+
+For information about the Lean proof assistant that we will use in this course, you could head over to the
 
 [official Lean homepage: http://leanprover.github.io/](http://leanprover.github.io/) 
 
-There you will find instructions that explain how to install Lean on your own machine. (Students are advised, but not required, to have the full version of Lean installed on their own computers in order to pass the course.  Alternatively, the chrome web browser can be used to complete the Lean assignments.)
-
-In the online version of the textbook [Logic and Proof](https://leanprover.github.io/logic_and_proof/), each example of Lean code is presented inside a box that contains a "try it" link at the top right. Clicking this link launches a new browser tab running a version of Lean and containing a window into which Lean commands can be entered and executed (or "type-checked").
-
-In fact, it may even be possible to complete all the Lean homework assignments using only the browser-based version.  However, the assignments that involve Lean will be team-based, and it's highly recommended that at least one person on each team should have a full version of Lean installed on their computer.
+That page has some instructions for running Lean on your own machine. However, since the official instructions on that page are somewhat terse, I have added some notes on installing Lean on Windows machines to this page (below).
 
 ---
 

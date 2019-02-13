@@ -85,22 +85,9 @@ Students are expected to have access to the textbook.
 
 ## Lean Software Information
 
-For information about the Lean proof assistant that we will use in this course, 
-head over to the
+Please see our [Lean information page](https://github.com/williamdemeo/math2001-spring2019/tree/master/Lean).
 
-[official Lean homepage: http://leanprover.github.io/](http://leanprover.github.io/) 
-
-There you will find instructions for installing Lean on your own machine. 
-
-**Note:** While it's possible to use an online version of Lean, using your browser as the interface (as we will see in class), downloading and installing Lean on your local machine will be very helpful.
-
-When reading the online version of the textbook, available at [Logic and Proof](https://leanprover.github.io/logic_and_proof/), you will notice that each example of Lean code is presented inside a box
-that contains a "try it" link at the top right.  Clicking this link launches a new browser tab running a version of Lean and containing a window into which Lean commands can be entered and executed 
-(or "type checked").
-
-It may be possible to complete all the Lean homework assignments using only the browser-based version.  However, students who take the time to download and install Lean on their own computers early on in the semester will probably have an easier time completing the Lean portion of the homeworks. 
-
-Homework assignments that involve Lean will be team-based, and at least one person on each team should have a full version of Lean installed on their own computer.
+For future reference, you can also get to our Lean info page by clicking on the [Lean](https://github.com/williamdemeo/math2001-spring2019/tree/master/Lean) directory at the top of this page.
 
 -----------------------------------
 ## Attendance
