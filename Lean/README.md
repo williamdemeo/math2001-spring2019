@@ -30,7 +30,7 @@ It should be straightforward to download and install both Lean and VS Code on Li
 
 Here is a summary of the steps that I *think* will work on Windows (but I cannot test this since I don't have a Windows machine, so please let me know if these steps don't work for you so I can help you).
 
-1. **Download and Unzip Lean.** Go to [https://github.com/leanprover/lean/releases/tag/v3.4.2](https://github.com/leanprover/lean/releases/tag/v3.4.2) and download the binary that matches your operating system.  If you're using Windows, that will probably be the [lean-3.4.2-windows.zip](https://github.com/leanprover/lean/releases/download/v3.4.2/lean-3.4.2-windows.zip) file. Unzip this file in a convenient location on your hard drive (recommended location: `C:\Users\USERNAME\` where you should replace `USERNAME` with your username).
+1. **Download and Unzip Lean.** Go to [https://github.com/leanprover/lean/releases/tag/v3.4.2](https://github.com/leanprover/lean/releases/tag/v3.4.2) and download the binary that matches your operating system.  If you're using Windows, that will probably be the [lean-3.4.2-windows.zip](https://github.com/leanprover/lean/releases/download/v3.4.2/lean-3.4.2-windows.zip) file. Unzip this file in a convenient location on your hard drive (recommended location: `C:\Users\YOURUSERNAME\` where you should replace `YOURUSERNAME` with your username).
 
 2. **Download and install VS Code** from [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
