@@ -30,6 +30,10 @@ It is recommended that each student install and use Lean on their own personal c
 
 It should be straightforward to download and install both Lean and VS Code on Linux, but if you have any trouble, please let me know so I can help you.
 
+### Mac Users
+
+If you are using a Mac, I suspect it will be easy to install Lean and VS Code, but unfortunately, as yet, I have no information about this.  Please let me know if you try it and run into any problems so I can help you.
+
 ### Windows Users
 
 Here is a summary of the steps that I *think* will work on Windows (but I cannot test this since I don't have a Windows machine, so please let me know if these steps don't work for you so I can help you).
@@ -51,10 +55,6 @@ Here is a summary of the steps that I *think* will work on Windows (but I cannot
    **Important.** Note the double backslashes.  Also, confirm that, if you replace the double with single backslashes, then the line above is the actual path to the `lean.exe` file on your computer, which should be present after you downloaded and unzipped the Lean program in Step 1 above.
 
 More information can be found on [this page](https://xenaproject.wordpress.com/2017/09/26/installing-lean-on-windows-from-scratch/) which provides nice and detailed instructions explaining how to download and install both [VS Code] and [Lean] on a Windows machine. (Of course, you should not follow the first instruction on that page, which is to download an older version of Lean.)
-
-### Mac Users
-
-If you are using a Mac, I suspect it will be easy to install Lean and VS Code, but unfortunately, as yet, I have no information about this.  Please let me know if you try it and run into any problems so I can help you.
 
 ### Other important info
 
