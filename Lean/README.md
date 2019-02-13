@@ -44,7 +44,7 @@ Here is a summary of the steps that I *think* will work on Windows (but I cannot
        }
    ```
 
-   **Important.** Confirm that the line above is the actual path to your lean.exe file on your computer, which should be present after you downloaded and unzipped the Lean program in step 1 above.
+   **Important.** Note the double backslashes.  Also, confirm that if you replaced the double with single backslashes, then the line above is the actual path to the `lean.exe` file on your computer, which should be present after you downloaded and unzipped the Lean program in Step 1 above.
 
 More information can be found on [this page](https://xenaproject.wordpress.com/2017/09/26/installing-lean-on-windows-from-scratch/) which provides nice and detailed instructions explaining how to download and install both [VS Code] and [Lean] on a Windows machine. (Of course, you should not follow the first instruction on that page, which is to download an older version of Lean.)
 
