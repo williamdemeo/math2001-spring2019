@@ -20,19 +20,37 @@ In fact, it may even be possible to complete all the Lean homework assignments u
 
 ## Important Information
 
-It is recommended that each student install and use Lean on their own personal computer (instead of simply using the web browser interface).
+It is recommended that each student install and use Lean on their own personal computer (instead of simply using the web browser interface).  It is also helpful to install VS Code, which is a powerful integrated development environment (IDE) in which you can edit and run your Lean code.  (However, VS Code is not required; if you prefer you can use emacs, which also has good Lean support.)
 
-To download Lean, go to [https://github.com/leanprover/lean/releases/tag/v3.4.2](https://github.com/leanprover/lean/releases/tag/v3.4.2) and download the binary that matches your operating system.
+### Linux Users
+
+It should be straightforward to download and install both Lean and VS Code on Linux, but if you have any trouble, please let me know so I can help you.
 
 ### Windows Users
 
-First download the zip file as just described.  Then see [this page](https://xenaproject.wordpress.com/2017/09/26/installing-lean-on-windows-from-scratch/) which provides nice and detailed instructions explaining how to download and install both [VS Code] and [Lean] on a Windows machine.
+Here is a summary of the steps that I *think* will work on Windows (but I cannot test this since I don't have a Windows machine, so please let me know if these steps don't work for you so I can help you).
 
-(Of course, you should not follow the first instruction on that page, which is to download an older version of Lean.)
+1. **Download and Unzip Lean.** Go to [https://github.com/leanprover/lean/releases/tag/v3.4.2](https://github.com/leanprover/lean/releases/tag/v3.4.2) and download the binary that matches your operating system.  If you're using Windows, that will probably be the [lean-3.4.2-windows.zip](https://github.com/leanprover/lean/releases/download/v3.4.2/lean-3.4.2-windows.zip) file. Unzip this file in a convenient location on your hard drive (recommended location: `C:\Users\USERNAME\` where you should replace `USERNAME` with your username).
 
-To reiterate, here is the link to instructions for installing Lean **if you are a MS Windows user**:
+2. **Download and install VS Code** from [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
-[https://xenaproject.wordpress.com/2017/09/26/installing-lean-on-windows-from-scratch/](https://xenaproject.wordpress.com/2017/09/26/installing-lean-on-windows-from-scratch/)
+3. **Install the vscode lean extension.**  Start vscode and open the `File > Preferences > Extensions` menu. In the search box, type `lean` and then select "lean, an extension for vscode..."  Click "Install" then "Reload"
+
+4. **Tell VS Code where to find Lean.** Open the `File > Preferences > Settings` menu in vs code and search for `lean`. When you see "Lean: Extra Options" click the link "Edit in settings.json." This will open up your `settings.json` file.  In that file, you should enter the following:
+
+   ```json
+       {
+         "lean.executablePath": "C:\\Users\\YourUserName\\lean-3.4.2-windows\\bin\\lean.exe"
+       }
+   ```
+
+   **Important.** Confirm that the line above is the actual path to your lean.exe file on your computer, which should be present after you downloaded and unzipped the Lean program in step 1 above.
+
+More information can be found on [this page](https://xenaproject.wordpress.com/2017/09/26/installing-lean-on-windows-from-scratch/) which provides nice and detailed instructions explaining how to download and install both [VS Code] and [Lean] on a Windows machine. (Of course, you should not follow the first instruction on that page, which is to download an older version of Lean.)
+
+### Mac Users
+
+If you are using a Mac, I suspect it will be easy to install Lean and VS Code, but unfortunately, as yet, I have no information about this.  Please let me know if you try it and run into any problems so I can help you.
 
 ### Other important info
 
