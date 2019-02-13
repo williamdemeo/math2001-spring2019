@@ -24,15 +24,15 @@ That page has some instructions for running [Lean][] on your own machine. Howeve
 
 ## Important Information
 
-It is recommended that each student install and use [Lean][] on their own personal computer (instead of simply using the web browser interface).  It is also helpful to install VS Code, which is a powerful integrated development environment (IDE) in which you can edit and run your [Lean][] code.  (However, VS Code is not required; if you prefer you can use emacs, which also has good [Lean][] support.)
+It is recommended that each student install and use [Lean][] on their own personal computer (instead of simply using the web browser interface).  It is also helpful to install VS Code, which is a powerful integrated development environment (IDE) in which you can edit and run your [Lean][] code.  (However, [VS Code][] is not required; if you prefer you can use emacs, which also has good [Lean][] support.)
 
 ### Linux Users
 
-It should be straightforward to download and install both [Lean][] and VS Code on Linux, but if you have any trouble, please let me know so I can help you.
+It should be straightforward to download and install both [Lean][] and [VS Code][] on Linux, but if you have any trouble, please let me know so I can help you.
 
 ### Mac Users
 
-Here are the steps that should get you up and running with VS Code and [Lean][] on a Mac.
+Here are the steps that should get you up and running with [VS Code][] and [Lean][] on a Mac.
 
 1. **Download and Unzip Lean.** Go to [https://github.com/leanprover/lean/releases/tag/v3.4.2](https://github.com/leanprover/lean/releases/tag/v3.4.2) and download the binary that matches your operating system.  If you're using a Mac, that will probably be the [lean-3.4.2-darwin.zip](https://github.com/leanprover/lean/releases/download/v3.4.2/lean-3.4.2-darwin.zip) file. Unzip this file in a convenient location on your hard drive (recommended location: `C:/Users/YOURUSERNAME/` where you should replace `YOURUSERNAME` with your username).
 
@@ -71,7 +71,7 @@ Here is a summary of the steps that I *think* will work on Windows (but I cannot
 
    **Important.** Note the double backslashes.  Also, confirm that, if you replace the double with single backslashes, then the line above is the actual path to the `lean.exe` file on your computer, which should be present after you downloaded and unzipped the [Lean][] program in Step 1 above.
 
-More information can be found on [this page](https://xenaproject.wordpress.com/2017/09/26/installing-lean-on-windows-from-scratch/) which provides nice and detailed instructions explaining how to download and install both [VS Code](https://code.visualstudio.com/) and [Lean]((http://leanprover.github.io/) on a Windows machine. (Of course, you should not follow the first instruction on that page, which is to download an older version of [Lean][].)
+More information can be found on [this page](https://xenaproject.wordpress.com/2017/09/26/installing-lean-on-windows-from-scratch/) which provides nice and detailed instructions explaining how to download and install both [VS Code][] and [Lean][] on a Windows machine. (Of course, you should not follow the first instruction on that page, which is to download an older version of [Lean][].)
 
 ---
 
@@ -138,3 +138,4 @@ While [Lean][] doesn't seem to have a formal API, per se, you can browse the sou
   - [order.lean](https://github.com/leanprover/lean/blob/master/library/init/algebra/order.lean)
 
 [Lean]: http://leanprover.github.io/ 
+[VS Code]: https://code.visualstudio.com/
