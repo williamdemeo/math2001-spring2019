@@ -32,7 +32,24 @@ It should be straightforward to download and install both Lean and VS Code on Li
 
 ### Mac Users
 
-If you are using a Mac, I suspect it will be easy to install Lean and VS Code, but unfortunately, as yet, I have no information about this.  Please let me know if you try it and run into any problems so I can help you.
+Here are the steps that should get you up and running with VS Code and Lean on a Mac.
+
+1. **Download and Unzip Lean.** Go to [https://github.com/leanprover/lean/releases/tag/v3.4.2](https://github.com/leanprover/lean/releases/tag/v3.4.2) and download the binary that matches your operating system.  If you're using a Mac, that will probably be the [lean-3.4.2-darwin.zip](https://github.com/leanprover/lean/releases/download/v3.4.2/lean-3.4.2-darwin.zip) file. Unzip this file in a convenient location on your hard drive (recommended location: `C:/Users/YOURUSERNAME/` where you should replace `YOURUSERNAME` with your username).
+
+2. **Download and install VS Code** from [https://code.visualstudio.com/](https://code.visualstudio.com/)
+
+3. **Install the vscode lean extension.**  Start vscode and open the `File > Preferences > Extensions` menu. In the search box, type `lean` and then select "lean, an extension for vscode..."  Click "Install" then "Reload"
+
+4. **Tell VS Code where to find Lean.** Open the `File > Preferences > Settings` menu in vs code and search for `lean`. When you see "Lean: Extra Options" click the link "Edit in settings.json." This will open up your `settings.json` file.  In that file, you should enter the following exactly as it appears here (except replace YOURUSERNAME):
+
+   ```json
+       {
+        "lean.executablePath": "/Users/YOURUSERNAME/lean-3.4.2-darwin/bin/lean"
+       }
+   ```
+
+If that doesn't work, please consult [this page](https://github.com/semorrison/2017-summer-students/wiki/Tips-for-installing-and-using-Lean-and-Visual-Studio-Code-(VSCode)) for more details and/or post your issue on Piazza.
+
 
 ### Windows Users
 
