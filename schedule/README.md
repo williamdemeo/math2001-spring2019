@@ -26,9 +26,9 @@
 | | | | |
 | M Feb 18 | Semantics: truth tables | [Ch 6.](https://leanprover.github.io/logic_and_proof/semantics_of_propositional_logic.html) | |
 | W Feb 20 | Semantics: Soundness and completeness| [Ch 6.](https://leanprover.github.io/logic_and_proof/semantics_of_propositional_logic.html) |  |
-| F Feb 22 | Review and catch-up | | [HW 4](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/hw04.pdf) [(hw04.pdf)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw04.pdf) [(hw04.lean)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw04.lean) |
+| F Feb 22 | Review and catch-up | | |
 | | | | |
-| M Feb 25 | Review for Exam 1 | | |
+| M Feb 25 | Review for Exam 1 | | [HW 4](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/hw04.pdf) [(hw04.pdf)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw04.pdf) [(hw04.lean)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw04.lean) |
 | W Feb 27 | **Exam 1** | **Chs 1--6, 11, 15** | |
 | F Mar 1 | 1st Order Logic (FOM); functions, predicates, relations | [Ch 7.](https://leanprover.github.io/logic_and_proof/first_order_logic.html)  |  |
 | | | | |
