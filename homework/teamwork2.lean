@@ -4,7 +4,7 @@
 -- Exercises: LaP 9.5. 1--8
 -- ------------------------
 
--- Due: 22 March 2019 at 2pm
+-- Due: 22 March 2019 by 1pm
 
 -- 1. Fill in the ``sorry``.
 

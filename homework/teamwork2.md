@@ -2,7 +2,7 @@
 
 Exercises 1--8 of Chapter 9
 
-Due: 22 March 2019
+Due: 22 March 2019 by 1pm
 
 **Instructions.** Go to [this section](https://leanprover.github.io/logic_and_proof/first_order_logic_in_lean.html#exercises) of our textbook...
 
