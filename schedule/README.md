@@ -42,7 +42,7 @@
 | | | | |
 | M Mar 18 | Sets: cartesian product, power set | [Ch 11.](https://leanprover.github.io/logic_and_proof/sets.html)   | |
 | W Mar 20 | Sets: indexed families | [Ch 11.](https://leanprover.github.io/logic_and_proof/sets.html)   | |
-| F Mar 22 | Sets in Lean: basics, identities | [Ch 12.](https://leanprover.github.io/logic_and_proof/sets_in_lean.html) |  **Teamwork 2** (tba) |
+| F Mar 22 | Sets in Lean: basics, identities | [Ch 12.](https://leanprover.github.io/logic_and_proof/sets_in_lean.html) |  [Teamwork 2](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/teamwork2.md) [(teamwork1.lean)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/teamwork2.lean) |
 | | | | |
 | Mar 25-9 | Spring Break | No Classes | |
 | | | | |
