@@ -52,7 +52,7 @@
 | | | | |
 | M Apr 8 | Relations; orders, equivalences | [Ch 13.](https://leanprover.github.io/logic_and_proof/relations.html) | |
 | W Apr 10 | Sets in Lean: indexed families, power sets | [Ch 12.](https://leanprover.github.io/logic_and_proof/sets_in_lean.html) | |  
-| F Apr 12 | Relations in Lean; orders, equivalences |  [Ch 14.](https://leanprover.github.io/logic_and_proof/relations_in_lean.html) | HW 8 (tba) |
+| F Apr 12 | Relations in Lean; orders, equivalences |  [Ch 14.](https://leanprover.github.io/logic_and_proof/relations_in_lean.html) | [HW 8](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/hw08.pdf) [(hw08.pdf)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw08.pdf) |
 | | | | |
 | M Apr 15  | Functions | [Ch 15.](https://leanprover.github.io/logic_and_proof/functions.html) | |
 | W Apr 17 |  Functions in Lean | [Ch 16.](https://leanprover.github.io/logic_and_proof/functions_in_lean.html) | |
