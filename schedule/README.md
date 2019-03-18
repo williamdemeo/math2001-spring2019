@@ -46,19 +46,19 @@
 | | | | |
 | Mar 25-9 | Spring Break | No Classes | |
 | | | | |
-| M Apr 1 | Sets: indexed families, cartesian product, power set | [Ch 11.](https://leanprover.github.io/logic_and_proof/sets.html)   | |
+| M Apr 1 | Relations; orders, equivalences | [Ch 13.](https://leanprover.github.io/logic_and_proof/relations.html)  | |
 | W Apr 3 | Catch up and review for test | | [HW 7](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/hw07.pdf) [(hw07.pdf)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw07.pdf) |
-| F Apr 5 | **Exam 2** | **Chs 7, 8, 9, 10, 11** | |
+| F Apr 5 | **Exam 2** **Chs 7, 8, 9, 10** | | |
 | | | | |
-| M Apr 8 |  Sets in Lean: basics, identities | [Ch 12.](https://leanprover.github.io/logic_and_proof/sets_in_lean.html) |   |
-| W Apr 10  | Sets in Lean: indexed families, power sets | [Ch 12.](https://leanprover.github.io/logic_and_proof/sets_in_lean.html) | |  
-| F Apr 12 | Relations; orders, equivalences | [Ch 13.](https://leanprover.github.io/logic_and_proof/relations.html) | HW 8 (tba) |
+| M Apr 8 | Relations; orders, equivalences | [Ch 13.](https://leanprover.github.io/logic_and_proof/relations.html) | |
+| W Apr 10 | Sets in Lean: indexed families, power sets | [Ch 12.](https://leanprover.github.io/logic_and_proof/sets_in_lean.html) | |  
+| F Apr 12 | Relations in Lean; orders, equivalences |  [Ch 14.](https://leanprover.github.io/logic_and_proof/relations_in_lean.html) | HW 8 (tba) |
 | | | | |
-| M Apr 15  | Relations in Lean; orders, equivalences |  [Ch 14.](https://leanprover.github.io/logic_and_proof/relations_in_lean.html) |
-| W Apr 17 | Functions | [Ch 15.](https://leanprover.github.io/logic_and_proof/functions.html) | |
-| F Apr 19 | Functions in Lean | [Ch 16.](https://leanprover.github.io/logic_and_proof/functions_in_lean.html)  | **Teamwork 3** (tba) |
+| M Apr 15  | Functions | [Ch 15.](https://leanprover.github.io/logic_and_proof/functions.html) | |
+| W Apr 17 |  Functions in Lean | [Ch 16.](https://leanprover.github.io/logic_and_proof/functions_in_lean.html) | |
+| F Apr 19 | Natural Numbers and Induction | [Ch 17.](https://leanprover.github.io/logic_and_proof/the_natural_numbers_and_induction.html) | **Teamwork 3** (tba) |
 | | | | |
-| M Apr 22 | Natural Numbers and Induction | [Ch 17.](https://leanprover.github.io/logic_and_proof/the_natural_numbers_and_induction.html) |
+| M Apr 22 |  |
 | W Apr 24 | Recursion | [Ch 17.](https://leanprover.github.io/logic_and_proof/the_natural_numbers_and_induction.html) | |
 | F Apr 26 | Natural numbers and induction in Lean |  [Ch 18.](https://leanprover.github.io/logic_and_proof/the_natural_numbers_and_induction_in_lean.html) | HW 9 (tba) |
 | | | | |
