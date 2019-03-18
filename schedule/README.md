@@ -47,7 +47,7 @@
 | Mar 25-9 | Spring Break | No Classes | |
 | | | | |
 | M Apr 1 | Sets: indexed families, cartesian product, power set | [Ch 11.](https://leanprover.github.io/logic_and_proof/sets.html)   | |
-| W Apr 3 | Catch up and review for test | | [HW 6](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/hw07.pdf) [(hw06.pdf)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw07.pdf) |
+| W Apr 3 | Catch up and review for test | | [HW 7](https://github.com/williamdemeo/math2001-spring2019/blob/master/homework/hw07.pdf) [(hw07.pdf)](https://github.com/williamdemeo/math2001-spring2019/raw/master/homework/hw07.pdf) |
 | F Apr 5 | **Exam 2** | **Chs 7, 8, 9, 10, 11** | |
 | | | | |
 | M Apr 8 |  Sets in Lean: basics, identities | [Ch 12.](https://leanprover.github.io/logic_and_proof/sets_in_lean.html) |   |
