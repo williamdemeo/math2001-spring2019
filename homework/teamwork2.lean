@@ -15,8 +15,12 @@ section
   variable  h : ∀ x, P x → P (f x)
 
   -- Show the following:
-  example : ∀ y, P y → P (f (f y)) :=
-  sorry
+  example : ∀ y, P y → P (f (f y)) := 
+  assume y : A,
+  assume h₁ : P y, show P (f (f y)), from
+  have h' : P y → P (f y), from h y,
+  have h₂ : P (f y), from h' h₁,
+  h (f y) h₂
 end
 
 -- 2. Fill in the ``sorry``.
@@ -59,7 +63,15 @@ section
   variable h : ∀ x, shaves barber x ↔ ¬ shaves x x
 
   -- Show the following:
-  example : false := sorry
+  example : false := 
+  have hnsbb : ¬ shaves barber barber, from 
+  assume hb : shaves barber barber, show false, from
+    have h' : shaves barber barber → ¬ shaves barber barber, from iff.elim_left (h barber),
+    have nsbb : ¬ shaves barber barber, from h' hb,
+    nsbb hb,
+  have h'' : ¬ shaves barber barber → shaves barber barber, from iff.elim_right (h barber),
+  have hsbb : shaves barber barber, from h'' hnsbb,
+   hnsbb hsbb
 end
 
 -- 5. Fill in the ``sorry``.
@@ -68,7 +80,12 @@ end
    variable U : Type
    variables A B : U → Prop
 
-   example : (∃ x, A x) → ∃ x, A x ∨ B x := sorry
+   example : (∃ x, A x) → ∃ x, A x ∨ B x := 
+   assume h : ∃ x, A x, show ∃ x, A x ∨ B x, from
+   exists.elim h
+   (assume y : U, assume h' : A y, 
+   have h'' : A y ∨ B y, from or.inl h',
+   exists.intro y h'')
  end
 
 -- 6. Fill in the ``sorry``.
@@ -80,11 +97,8 @@ section
   variable h1 : ∀ x, A x → B x
   variable h2 : ∃ x, A x
 
-  example : ∃ x, B x := 
-  exists.elim h2 
-  (assume (y : U) (h : A y),
-     have h' : B y, from h1 y h,
-     exists.intro y h')
+  example : ∃ x, B x := sorry
+
 end
 
 -- 7. Fill in the ``sorry``.
@@ -94,7 +108,15 @@ section
  variables A B C : U → Prop
 
  example (h1 : ∃ x, A x ∧ B x) (h2 : ∀ x, B x → C x) :
-     ∃ x, A x ∧ C x := sorry
+     ∃ x, A x ∧ C x := exists.elim h1 
+     (assume y, assume h: A y ∧ B y,
+     have h' : A y ∧ C y, from 
+     have ha : A y, from and.elim_left h,
+     have hb : B y, from and.elim_right h,
+     have hbc : B y → C y, from h2 y,
+     have hc : C y, from hbc hb,
+     and.intro ha hc, -- from ⟨ha, hc⟩,
+     exists.intro y h')
 end
 
 -- 8. Complete these proofs.
@@ -103,7 +125,15 @@ section
   variable  U : Type
   variables A B C : U → Prop
 
-  example : (¬ ∃ x, A x) → ∀ x, ¬ A x := sorry
+  theorem first_theorem : (¬ ∃ x, A x) → ∀ x, ¬ A x := 
+  assume h : ¬ ∃ x, A x, show ∀ x, ¬ A x, from
+  assume y : U, show ¬ A y, from 
+  assume h' : A y, show false, from 
+  have h'' : ∃ x, A x, from exists.intro y h',
+  h h''
+
+#check first_theorem
+#print first_theorem
 
   example : (∀ x, ¬ A x) → ¬ ∃ x, A x := sorry
 end
@@ -117,7 +147,14 @@ section
   variable  U : Type
   variables R : U → U → Prop
 
-  example : (∃ x, ∀ y, R x y) → ∀ y, ∃ x, R x y := sorry
+  example : (∃ x, ∀ y, R x y) → ∀ y, ∃ x, R x y := 
+  assume h : ∃ x, ∀ y, R x y, show ∀ y, ∃ x, R x y,
+  from 
+  exists.elim h 
+  (assume z, assume h' : ∀ y, R z y,
+  assume w, show ∃ x, R x w, from 
+  have h'' : R z w, from h' w,
+  exists.intro z h'')
 end
 
 
