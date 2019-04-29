@@ -87,12 +87,19 @@ section
   variable  {U : Type}
   variables A B C : set U
 
+  #check A ⊆ B
+
   -- For this exercise these two facts are useful.
   example (h1 : A ⊆ B) (h2 : B ⊆ C) : A ⊆ C := subset.trans h1 h2
 
   example : A ⊆ A := subset.refl A
 
-  example (h : A ⊆ B) : powerset A ⊆ powerset B := sorry
+  example (h : A ⊆ B) : powerset A ⊆ powerset B :=
+  assume hca : C ∈ powerset A, have hca : C ⊆ A, from hca,
+  have hcb : C ⊆ B, from subset.trans hca h,
+  have c : C ∈ powerset B, from hcb,
+  c
+
 
   example (h : powerset A ⊆ powerset B) : A ⊆ B := sorry
 end
