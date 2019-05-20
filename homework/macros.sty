@@ -1,0 +1,726 @@
+%%==============================================================================
+%% ---------- DEFINITIONS  -----------
+% New terms will be typeset as follows:
+% \newcommand{\defn}[1]{{\bf \emph{#1}}}    % bold and italic
+% (later we can change this to just bold, or just italic if we want)
+% \newcommand{\defn}[1]{{\bf #1}}  % bold
+% \newcommand{\defn}[1]{\emph{#1}}  % italic
+
+
+%%%%%%%%% THEOREM ENVIRONMENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \theoremstyle{plain}
+% \newtheorem{theorem} {Theorem}
+% \newtheorem{corollary}[theorem]{Corollary}
+% \newtheorem*{main} {Main-Theorem}
+% \newtheorem{lemma}[theorem]{Lemma}
+% \newtheorem{prop}[theorem]{Proposition}
+% \theoremstyle{definition}
+% \newtheorem{definition}[theorem]{Definition}
+% \newtheorem{example}[theorem]{Example}
+% \newtheorem{examples}[theorem]{Example}
+% \newtheorem{exercise}{Exercise}
+% \newtheorem{ex}{Exercise}
+% \newtheorem{exers}[theorem]{Exercises}
+% \theoremstyle{remark}
+% \newtheorem*{notation}{Notation}
+% \newtheorem{remark}{Remark}
+% \newtheorem{claim}{Claim}
+% \newtheorem*{remarks}{Remarks}
+% \newtheorem*{sol}{Solution}
+%\newtheorem{problem}[theorem]{Problem}
+
+% I temporarily commented out \usepackage{exers} (above) and added the next two
+% lines so mine would compile even without the exers.sty file. 
+%  \newtheorem{exercises}{Exercises}
+%  \newtheorem{problem}[theorem]{Problem}
+
+% [WJD] Suggestion: to begin a numbered list of examples, use
+% \begin{examples}~
+%   \begin{enumerate}[(a)]
+%   \item  ...
+
+%\numberwithin{definition}{section}
+\numberwithin{theorem}{section}
+%\numberwithin{corollary}{section}
+%\numberwithin{prop}{section}
+%\numberwithin{lemma}{section}
+\numberwithin{equation}{section}
+
+
+
+
+
+% Both definitions and indexing (from the commutator book):
+%%%--------------------------------------------------------
+%%% (modified from the free lattice book)
+%%% \defn usage:
+%%%     This writes its argument in bold italics and also calls \index
+%%%     for the index. eg.
+%%%
+%%%     \defn{join cover}
+%%%
+%%%     It has an optional second argument to specify the index
+%%%     entry more precisely which works just like \index.
+%%%
+%%%     If you are writing about join covers (but they were defined
+%%%     earlier, you can use \index{join cover}. This puts
+%%%     nothing in the text, but makes an index entry.
+%%%
+\newcommand{\indexit}[1]{\index{#1|textit}}
+% \def\defn#1{\gdef\defnstring{#1}%
+%   %%% original:   \xdef\dodefnii{{\noexpand\em
+%   \xdef\dodefnii{{\noexpand\bfseries\noexpand\em
+%        \defnstring}\noexpand\indexit{\defnstring}\noexpand\makeatother}%
+%   \futurelet\nextthing\dodefn}
+% \def\dodefn{%
+%   \ifx\nextthing[\let\next=\dodefni
+%     \else\let\next=\dodefnii\fi
+%   \makeatletter
+%   \next}
+\newcommand\defn[1]{\textbf{#1}}
+\def\dodefni[#1]{%
+  {\bfseries\em\defnstring}%
+  \indexit{#1}%
+  \makeatother}
+
+\newcommand\define[1]{\defn{#1}}
+%\newcommand{\defn}[1]{{\bf #1}}  %% \defn is now defined above so 
+%%                  that each use is accompanied by an index entry.
+%%                  To define something without an index entry, use
+\newcommand{\defb}[1]{{\bf #1}}  %%       \defb (for bold)
+\newcommand{\defi}[1]{{\it #1}}  %%       \defi (for italicised)
+\newcommand{\defbi}[1]{{\bfseries \em  #1}}  %%       \defbi (for bold and ital)
+
+\providecommand{\pair}[2]{\left\langle#1,#2\right\rangle} % Pairing of morphisms
+
+%%==============================================================================
+%%             CATEGORIES                                                     %%
+\newcommand{\cat}[1]{\ensuremath{\mathcal{#1}}\xspace}
+\newcommand{\cC}{\cat{C}}
+\newcommand{\cD}{\cat{D}}
+\newcommand{\cE}{\cat{E}}
+\newcommand{\cF}{\cat{F}}
+\newcommand{\cM}{\cat{M}}
+\newcommand{\src}{\ensuremath{\operatorname{src}}}
+\newcommand{\tar}{\ensuremath{\operatorname{tar}}}
+\providecommand{\Ca}{\mathscr{C}} % Arbitrary category
+\providecommand{\Da}{\mathscr{D}} % Arbitrary category
+
+\DeclareMathOperator{\op}{op} % Opposite
+
+\newcommand\Set{\ensuremath{\mathbf{Set}}}        %% Sets and total functions
+\providecommand{\set}{\Set} % Category of sets
+
+\newcommand\Mon{\ensuremath{\mathbf{Mon}}}        %% Monoids
+\providecommand{\mon}{\Mon}
+
+\newcommand\Par{\ensuremath{\mathbf{Par}}}        %% Sets and partial functions
+\providecommand{\parf}{\Par} 
+
+\newcommand\Rel{\ensuremath{\mathbf{Rel}}} % Category of sets with relations
+
+\newcommand\Pre{\ensuremath{\mathbf{Pre}}}        %% Preorders
+
+\newcommand\Poset{\ensuremath{\mathbf{Pos}}}    %% Posets
+\providecommand{\pos}{\Poset} % Category of posets
+
+\newcommand\Lat{\ensuremath{\mathbf{Lat}}}        %% Lattices
+\newcommand\lat{\Lat}
+\newcommand\CLat{\ensuremath{\mathbf{CLat}}}      %% Compelete lattices
+\newcommand\clat{\CLat}
+\newcommand\ACLat{\ensuremath{\mathbf{ACLat}}}    %% Algebraic compelete lattices
+\newcommand\aclat{\ACLat}
+\newcommand\BLat{\ensuremath{\mathbf{BLat}}}      %% Boolean lattices
+\newcommand\blat{\BLat}
+\newcommand\HLat{\ensuremath{\mathbf{HLat}}}      %% Heyting lattices
+\newcommand\hlat{\HLat}
+
+\newcommand{\Graph}{\ensuremath{\mathbf{Grph}}} % Category of graphs
+\providecommand{\grph}{\Graph} % Category of graphs
+
+\newcommand\Grp{\ensuremath{\mathbf{Grp}}}        %% Groups
+\providecommand{\grp}{\Grp}
+
+\newcommand\ocpo{\ensuremath{\omega\mathbf{cpo}}} %% omega-chain cocomplete posets
+\newcommand\dcpo{\ensuremath{\mathbf{dcpo}}}      %% directed-cocomplete posets
+
+\newcommand{\Fin}{\ensuremath{\mathbf{Fin}}} % Category of finite sets
+\providecommand{\finset}{\Fin} % Category of finite sets
+
+\newcommand\SDom{\ensuremath{\mathbf{SDom}}}      %% Scott domains
+
+%% Alternatively, we could use the more traditional double underline.
+%% \def\dunderline#1{\underline{\underline{#1}}}
+%% \newcommand\Set{\ensuremath{\dunderline{\mathrm{Set}}}}
+
+%%==============================================================================
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Acronyms
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% \usepackage[acronym, shortcuts]{glossaries}
+%\usepackage[smaller]{acro}
+\usepackage[smaller]{acronym}
+
+%% \acs{CSP} -- short version of the acronym\\
+%% \acl{CSP} -- expanded acronym without mentioning the acronym.\\
+%% \acp{CSP} -- plurals.\\
+%% \acfp{CSP} -- long forms into plurals.\\
+%% \acsp{CSP} -- short form into a plural.\\
+%% \aclp{CSP} -- long form into a plural.\\
+%% \acfi{CSP} -- Full Name acronym in italics and abbreviated form in upshape.\\
+%% \acsu{CSP} -- short form of the acronym and marks it as used.\\
+%% \aclu{CSP} -- Prints the long form of the acronym and marks it as used.\\
+
+\usepackage{xspace}
+
+\acrodef{sat}[SAT]{satisfiability}
+\acrodef{nae}[NAE]{not-all-equal}
+\acrodef{ctb}[CTB]{cube term blocker}
+\acrodef{tct}[TCT]{tame congruence theory}
+\acrodef{wnu}[WNU]{weak near-unanimity}
+\acrodef{CSP}[CSP]{constraint satisfaction problem}
+\acrodef{cib}[CIB]{commutative idempotent binar}
+\acrodef{NP}[NP]{nondeterministic polynomial time}
+\acrodef{P}[P]{polynomial time}
+\acrodef{PeqNP}[P $ = $ NP]{P is NP}
+\acrodef{PneqNP}[P $ \neq $ NP]{P is not NP}
+\newcommand{\bool}{\ensuremath{\mathtt{Bool}}}
+% \newcommand{\true}{\ensuremath{\mathtt{true}}}
+% \newcommand{\false}{\ensuremath{\mathtt{false}}}
+\newcommand{\CSP}{\ensuremath{\operatorname{CSP}}}
+\newcommand{\slt}{\ensuremath{\mathbf S_2}}
+\newcommand{\wnu}{\acs{wnu}\xspace}
+\newcommand{\tct}{\acs{tct}\xspace}
+\newcommand{\ctb}{\acs{ctb}\xspace}
+\newcommand{\csp}{\acs{CSP}\xspace}
+\newcommand{\sat}{\acs{sat}\xspace}
+\newcommand{\nae}{\acs{nae}\xspace}
+\newcommand{\csps}{\acsp{CSP}\xspace}
+\newcommand{\cib}{\acs{cib}\xspace}
+\newcommand{\cibs}{\acsp{cib}\xspace}
+\newcommand{\PeqNP}{\acs{PeqNP}\xspace}
+\newcommand{\PneqNP}{\acs{PneqNP}\xspace}
+\newcommand{\NPcomplete}{\acs{NP}-complete\xspace}
+\newcommand{\NP}{\acs{NP}\xspace}
+\renewcommand{\P}{\acs{P}\xspace}
+%\newcommand{\Maroti}{\textsf{Mar\'{o}ti}\xspace}
+\usepackage{scalefnt}
+\usepackage{tikz}
+\usepackage{color}
+% \usepackage[margin=1in]{geometry}
+% \usetikzlibrary{calc}
+% \newcommand{\mfA}{\ensuremath{\mathfrak{A}}}
+% \newcommand{\mfX}{\ensuremath{\mathfrak{X}}}
+% \newcommand{\lb}{\ensuremath{\llbracket}}
+% \newcommand{\rb}{\ensuremath{\rrbracket}}
+% \newcommand{\id}{\ensuremath{\operatorname{id}}}
+% \newcommand{\fin}{\ensuremath{\operatorname{fin}}}
+% \newcommand{\Eq}{\ensuremath{\operatorname{Eq}}}
+% \newcommand{\Rel}{\ensuremath{\operatorname{Rel}}}
+% \newcommand{\Proj}{\ensuremath{\operatorname{Proj}}}
+% \newcommand{\arity}{\ensuremath{\operatorname{arity}}}
+% \newcommand{\Op}{\ensuremath{\operatorname{Op}}}
+% \newcommand{\alg}[1]{\ensuremath{\mathbf{#1}}}
+% \newcommand{\Sub}{\ensuremath{\operatorname{Sub}}}
+% \newcommand{\Con}{\ensuremath{\operatorname{Con}}}
+% \newcommand{\Clo}{\ensuremath{\operatorname{Clo}}}
+% \newcommand{\Pol}{\ensuremath{\operatorname{Pol}}}
+% \newcommand{\Poly}{\ensuremath{\operatorname{Poly}}}
+% \newcommand{\V}{\ensuremath{\operatorname{V}}}
+
+\usepackage{bm}
+% \newcommand{\N}{\ensuremath{\mathbb{N}}}
+% \newcommand{\SDwedge}{\ensuremath{\mbox{SD}_\wedge}}
+
+% \newcommand{\<}{\ensuremath{\langle}}
+% \renewcommand{\>}{\ensuremath{\rangle}}
+% \newcommand{\bR}{\ensuremath{\mathbf{R}}}
+% \newcommand{\sansA}{\ensuremath{\mathsf{A}}}
+% \newcommand{\sansC}{\ensuremath{\mathsf{C}}}
+% \newcommand{\sansH}{\ensuremath{\mathsf{H}}}
+% \newcommand{\sansO}{\ensuremath{\mathsf{O}}} % ALL FINITARY OPERATIONS
+% \newcommand{\sansP}{\ensuremath{\mathsf{P}}}
+% \newcommand{\sansPoly}{\ensuremath{\mathsf{poly}}}
+% \newcommand{\sansRel}{\ensuremath{\mathsf{rel}}}
+% \newcommand{\sansClo}{\ensuremath{\mathsf{clo}}}
+% \newcommand{\sansR}{\ensuremath{\mathsf{R}}} % ALL FINITARY RELATIONS
+% \newcommand{\sansS}{\ensuremath{\mathsf{S}}}
+% \newcommand{\sansT}{\ensuremath{\mathsf{T}}}
+% \newcommand{\bA}{\ensuremath{\mathbf{A}}}
+% \newcommand{\bD}{\ensuremath{\mathbf{D}}}
+% \newcommand{\bF}{\ensuremath{\mathbf{F}}}
+% \newcommand{\bM}{\ensuremath{\mathbf{M}}}
+% \newcommand{\bP}{\ensuremath{\mathbf{P}}}
+% \newcommand{\br}{\ensuremath{\mathbf{r}}}
+% \newcommand{\bbA}{\ensuremath{\mathbb{A}}}
+% \newcommand{\bbB}{\ensuremath{\mathbb{B}}}
+% \newcommand{\bbC}{\ensuremath{\mathbb{C}}}
+% \newcommand{\bbD}{\ensuremath{\mathbb{D}}}
+% \newcommand{\bbS}{\ensuremath{\mathbb{S}}}
+% \newcommand{\bbV}{\ensuremath{\mathbb{V}}}
+% \newcommand{\bs}{\ensuremath{\mathbf{s}}}
+% \newcommand{\sA}{\ensuremath{\mathscr{A}}}
+% \newcommand{\sB}{\ensuremath{\mathcal{B}}}
+% \newcommand{\sS}{\ensuremath{\mathscr{S}}}
+% \newcommand{\bB}{\ensuremath{\mathbf{B}}}
+% \newcommand{\bC}{\ensuremath{\mathbf{C}}}
+% %\newcommand{\cC}{\ensuremath{\mathcal{C}}}
+% \newcommand{\cS}{\ensuremath{\mathcal{S}}}
+% \newcommand{\cP}{\ensuremath{\mathcal{P}}}
+% \newcommand{\sC}{\ensuremath{\mathscr{C}}}
+% \newcommand{\cI}{\ensuremath{\mathcal{I}}}
+% \newcommand{\sI}{\ensuremath{\mathscr{I}}}
+% \newcommand{\sM}{\ensuremath{\mathscr{M}}}
+% \newcommand{\sR}{\ensuremath{\mathscr{R}}}
+% \newcommand{\bS}{\ensuremath{\mathbf{S}}}
+% \newcommand{\bx}{\ensuremath{\mathbf{x}}}
+% \newcommand{\power}[1]{\ensuremath{\mathscr{P}(#1)}}
+% \newcommand{\sP}{\ensuremath{\power{P}}}
+% \newcommand{\balpha}{\ensuremath{\boldsymbol{\alpha}}}
+% \newcommand{\bbeta}{\ensuremath{\boldsymbol{\beta}}}
+% \newcommand{\bgamma}{\ensuremath{\boldsymbol{\gamma}}}
+% \newcommand{\bdelta}{\ensuremath{\boldsymbol{\delta}}}
+% \newcommand{\bepsilon}{\ensuremath{\boldsymbol{\epsilon}}}
+% \newcommand{\AAn}{\ensuremath{A^{(A^n)}}}
+% \newcommand{\AAm}{\ensuremath{A^{(A^m)}}}
+% \newcommand{\AAk}{\ensuremath{A^{(A^k)}}}
+% \newcommand{\meet}{\ensuremath{\wedge}}
+% \newcommand{\Meet}{\ensuremath{\bigwedge}}
+% \renewcommand{\Join}{\ensuremath{\bigvee}}
+% \newcommand{\join}{\ensuremath{\vee}}
+\newcommand{\relR}{\ensuremath{\rel{R}}}
+\newcommand{\rP}{\ensuremath{\rel{P}}}
+
+
+
+
+\newcommand{\etaR}{\ensuremath{\tilde{\eta}}}
+\newcommand{\hto}{\ensuremath{\rightharpoonup}}
+% \newcommand{\ar}{\ensuremath{\operatorname{ar}}}
+\newcommand{\dom}{\ensuremath{\operatorname{dom}}}
+\newcommand{\cod}{\ensuremath{\operatorname{cod}}}
+\newcommand{\im}{\ensuremath{\operatorname{im}}}
+%\newcommand{\slt}{\ensuremath{\mathbf S_2}}
+%% \newcommand{\mas}{\acs{MAS}\xspace}
+%% \newcommand{\mas}{\acs{MA}\xspace}
+%% \newcommand{\masses}{\acsp{MA}\xspace}
+\newcommand{\mfA}{\ensuremath{\mathfrak{A}}}
+\newcommand{\mfX}{\ensuremath{\mathfrak{X}}}
+\newcommand{\lb}{\ensuremath{\llbracket}}
+\newcommand{\rb}{\ensuremath{\rrbracket}}
+\newcommand{\id}{\ensuremath{\operatorname{id}}}
+\newcommand{\fin}{\ensuremath{\operatorname{fin}}}
+\newcommand{\Eq}{\ensuremath{\operatorname{Eq}}}
+\newcommand{\Proj}{\ensuremath{\operatorname{Proj}}}
+\newcommand{\arity}{\ensuremath{\operatorname{arity}}}
+\newcommand{\Op}{\ensuremath{\operatorname{Op}}}
+
+
+% % ALGEBRAS
+% % An algebra should be written inside angled brackets:
+\newcommand{\algebra}[1]{\ensuremath{\langle #1 \rangle}}  %% Example:    \algebra{A; F}  -->  <A; F>
+
+%% For names of algebras, boldface is used:
+\newcommand{\alg}[1]{\ensuremath{\mathbf{#1}}}  %% Example \alg{A} = \algebra{A; F}  -->  \mathbf{A} = <A; F>
+\newcommand{\Sub}{\ensuremath{\operatorname{Sub}}}
+\newcommand{\Con}{\ensuremath{\operatorname{Con}}}
+\newcommand{\Cg}{\ensuremath{\operatorname{Cg}}}
+\newcommand{\Sg}{\ensuremath{\operatorname{Sg}}}
+\newcommand{\Clo}{\ensuremath{\operatorname{\mathsf{Clo}}}}
+\newcommand{\typ}{\ensuremath{\operatorname{typ}}}
+\newcommand{\Pol}{\ensuremath{\operatorname{Pol}}}
+\newcommand{\Poly}{\ensuremath{\operatorname{Poly}}}
+
+\newcommand{\class}[1]{\ensuremath{\mathcal{#1}}}
+\newcommand{\va}{\ensuremath{\mathbf{a}}}
+\newcommand{\vb}{\ensuremath{\mathbf{b}}}
+\newcommand{\Id}[1]{\ensuremath{\operatorname{Id}(#1)}}
+\newcommand{\Mod}[1]{\ensuremath{\operatorname{Mod}(#1)}}
+\newcommand{\clop}[1]{\ensuremath{\mathbf{#1}}}
+\newcommand{\var}[1]{\ensuremath{\mathcal{#1}}}
+\newcommand{\close}[1]{\ensuremath{\overline{#1}}}
+\newcommand{\Hom}[1]{\ensuremath{\operatorname{Hom}(#1)}}
+\newcommand{\Epi}[1]{\ensuremath{\operatorname{Epi}(#1)}}
+% \newcommand{\Con}[1]{\ensuremath{\operatorname{Con}(#1)}}
+% \newcommand{\Sg}[2]{\ensuremath{\operatorname{Sg}^{#1}(#2)}}
+\newcommand{\compose}{\ensuremath{\circ}}
+
+\newcommand{\V}{\ensuremath{\operatorname{V}}}
+\newcommand{\sdp}{\ensuremath{\leq_{\mathrm{sd}}}}
+%\newcommand{\defn}[1]{{\bf #1}}
+% \newcommand{\defn}[1]{\textit{#1}}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\SDwedge}{\ensuremath{\mbox{SD}_\wedge}}
+\newcommand{\<}{\ensuremath{\langle}}
+\renewcommand{\>}{\ensuremath{\rangle}}
+\newcommand{\bR}{\ensuremath{\mathbf{R}}}
+\newcommand{\bn}{\ensuremath{\mathbf{n}}}
+\newcommand{\sansA}{\ensuremath{\mathsf{A}}}
+\newcommand{\sansComp}{\ensuremath{\mathsf{comp}}}
+\newcommand{\sansC}{\ensuremath{\mathsf{C}}}
+\newcommand{\sansH}{\ensuremath{\mathsf{H}}}
+\newcommand{\sansO}{\ensuremath{\mathsf{O}}} % ALL FINITARY OPERATIONS
+\newcommand{\sansP}{\ensuremath{\mathsf{P}}}
+\newcommand{\sansPoly}{\ensuremath{\mathsf{Pol}}}
+\newcommand{\sansPol}{\ensuremath{\mathsf{Pol}}}
+\newcommand{\sansRel}{\ensuremath{\mathsf{Inv}}}
+\newcommand{\sansInv}{\ensuremath{\mathsf{Inv}}}
+\newcommand{\sansClo}{\ensuremath{\operatorname{\mathsf{Clo}}}}
+\newcommand{\sansR}{\ensuremath{\mathsf{R}}} % ALL FINITARY RELATIONS
+\newcommand{\sansS}{\ensuremath{\mathsf{S}}}
+\newcommand{\sansT}{\ensuremath{\mathsf{T}}}
+% \newcommand{\bA}{\ensuremath{\mathbf{A}}}
+\newcommand{\bQ}{\ensuremath{\mathbf{Q}}}
+\newcommand{\bT}{\ensuremath{\mathbf{T}}}
+\newcommand{\ba}{\ensuremath{\mathbf{a}}}
+\newcommand{\bb}{\ensuremath{\mathbf{b}}}
+\newcommand{\bt}{\ensuremath{\mathbf{t}}}
+\newcommand{\bu}{\ensuremath{\mathbf{u}}}
+\newcommand{\bv}{\ensuremath{\mathbf{v}}}
+\newcommand{\bw}{\ensuremath{\mathbf{w}}}
+\newcommand{\vf}{\ensuremath{\mathbf{f}}}
+\newcommand{\onlyif}{\ensuremath{\Longrightarrow}}
+\newcommand{\br}{\ensuremath{\mathbf{r}}}
+\newcommand\ubA{\ensuremath{\underline{\mathbf{A}}}}
+\newcommand\uA{\ensuremath{\underline{A}}}
+\newcommand{\bbA}{\ensuremath{\mathbb{A}}}
+\newcommand{\bbB}{\ensuremath{\mathbb{B}}}
+\newcommand{\bbC}{\ensuremath{\mathbb{C}}}
+\newcommand{\bbD}{\ensuremath{\mathbb{D}}}
+\newcommand{\bbS}{\ensuremath{\mathbb{S}}}
+\newcommand{\bbV}{\ensuremath{\mathbb{V}}}
+\newcommand{\bs}{\ensuremath{\mathbf{s}}}
+\newcommand{\sA}{\ensuremath{\mathcal{A}}}
+\newcommand{\sE}{\ensuremath{\mathcal{E}}}
+\newcommand{\sV}{\ensuremath{\mathcal{V}}}
+\newcommand{\sB}{\ensuremath{\mathcal{B}}}
+\newcommand{\sS}{\ensuremath{\mathcal{S}}}
+% \newcommand{\bB}{\ensuremath{\mathbf{B}}}
+\newcommand{\bc}{\ensuremath{\mathbf{c}}}
+\newcommand{\Sol}{\ensuremath{\operatorname{Sol}}}
+
+\newcommand{\JJ}{\ensuremath{\underline{J}}}
+\newcommand{\nn}{\ensuremath{\underline{n}}}
+\newcommand{\mm}{\ensuremath{\underline{m}}}
+\newcommand{\pp}{\ensuremath{\underline{p}}}
+\newcommand{\kk}{\ensuremath{\underline{k}}}
+\newcommand{\ul}{\ensuremath{\underline{\ell}}}
+%% \newcommand{\vzero}{\ensuremath{\mathbf{0}}}
+\newcommand{\vzero}{\ensuremath{\eta}}
+\newcommand{\uzero}{\ensuremath{\underline{0}}}
+\newcommand{\uone}{\ensuremath{\underline{1}}}
+\newcommand{\utwo}{\ensuremath{\underline{2}}}
+\newcommand{\uthree}{\ensuremath{\underline{3}}}
+
+\newcommand{\bC}{\ensuremath{\mathbf{C}}}
+%\newcommand{\cC}{\ensuremath{\mathcal{C}}}
+\newcommand{\cS}{\ensuremath{\mathcal{S}}}
+\newcommand{\sC}{\ensuremath{\mathcal{C}}}
+\newcommand{\sI}{\ensuremath{\mathcal{I}}}
+\newcommand{\sM}{\ensuremath{\mathcal{M}}}
+\newcommand{\sW}{\ensuremath{\mathcal{W}}}
+\newcommand{\sR}{\ensuremath{\mathcal{R}}}
+\newcommand{\sF}{\ensuremath{\mathcal{F}}}
+\newcommand{\bS}{\ensuremath{\mathbf{S}}}
+\newcommand{\bx}{\ensuremath{\mathbf{x}}}
+\newcommand{\by}{\ensuremath{\mathbf{y}}}
+\newcommand{\bz}{\ensuremath{\mathbf{z}}}
+\newcommand{\power}[1]{\ensuremath{\mathcal{P}(#1)}}
+%% \newcommand{\sP}{\ensuremath{\power{P}}}
+\newcommand{\sP}{\ensuremath{\mathcal{P}}}
+\newcommand{\rsP}{\ensuremath{\rel{\mathcal{P}}}}
+\newcommand{\rsR}{\ensuremath{\rel{\mathcal{R}}}}
+\newcommand{\balpha}{\ensuremath{\boldsymbol{\alpha}}}
+\newcommand{\bbeta}{\ensuremath{\boldsymbol{\beta}}}
+\newcommand{\bgamma}{\ensuremath{\boldsymbol{\gamma}}}
+\newcommand{\bdelta}{\ensuremath{\boldsymbol{\delta}}}
+\newcommand{\bepsilon}{\ensuremath{\boldsymbol{\epsilon}}}
+\newcommand{\AAn}{\ensuremath{A^{(A^n)}}}
+\newcommand{\AAm}{\ensuremath{A^{(A^m)}}}
+\newcommand{\AAk}{\ensuremath{A^{(A^k)}}}
+\newcommand{\meet}{\ensuremath{\wedge}}
+\newcommand{\Meet}{\ensuremath{\bigwedge}}
+\renewcommand{\Join}{\ensuremath{\bigvee}}
+\newcommand{\join}{\ensuremath{\vee}}
+\newcommand{\onto}{\ensuremath{\twoheadrightarrow}}
+\newcommand{\into}{\ensuremath{\rightarrowtail}}
+\newcommand{\fst}{\ensuremath{\operatorname{fst}}}
+\newcommand{\snd}{\ensuremath{\operatorname{snd}}}
+\newcommand{\absorbing}{\ensuremath{\mathrel{\triangleleft}}}
+\newcommand{\minabsorbing}{\ensuremath{\mathrel{\triangleleft\triangleleft}}}
+%% \newcommand{\myprod}{\ensuremath{\prod}}
+\newcommand{\myprod}{\ensuremath{\Pi}}
+
+%% \newcommand\map{\ensuremath{\operatorname{map}}}
+\newcommand\map{\ensuremath{map}}
+\newcommand{\res}{\ensuremath{\upharpoonright}}  % restriction
+\newcommand\restr[2]{{% we make the whole thing an ordinary symbol
+  \left.\kern-\nulldelimiterspace % automatically resize the bar with \right
+  #1 % the function
+  \vphantom{\big|} % pretend it's a little taller at normal size
+  \right|_{#2} % this is the delimiter
+  }}
+%% use like this: \restr{f}{A} (restriction of the function f to the set A)
+
+
+%%% This enables markdown style bold and italic. %%%
+\makeatletter
+\def\starparse{\@ifnextchar*{\bfstarx}{\itstar}}
+\def\bfstarx#1{\@ifnextchar*{\bfitstar\@gobble}{\bfstar}}
+\makeatother
+\def\itstar#1*{\textit{#1}\starON}
+\def\bfstar#1**{\textbf{#1}\starON}
+\def\bfitstar#1***{\textbf{\textit{#1}}\starON}
+\def\starON{\catcode`\*=\active}
+\def\starOFF{\catcode`\*=12}
+\starON
+\def*{\starOFF \starparse}
+\starOFF
+
+
+
+
+\newcommand{\swap}[1]{\ensuremath{\mathtt{swap}(#1)}}
+\newcommand{\curry}[1]{\ensuremath{\mathtt{curry}(#1)}}
+\newcommand{\uncurry}[1]{\ensuremath{\mathtt{uncurry}(#1)}}
+
+%% Imported from myMacros
+
+\newcommand{\lics}{\acs{lics}\xspace}
+\newcommand{\bM}{\ensuremath{\mathbf{M}}}
+\newcommand{\cP}{\ensuremath{\mathcal{P}}}
+\newcommand{\cI}{\ensuremath{\mathcal{I}}}
+
+
+%% Imported from alg-csp-macros.sty
+
+\newcommand{\mas}{mass\xspace}
+\newcommand{\masses}{masses\xspace}
+\newcommand{\sd}{\acs{sd}\xspace}
+
+
+%%%%%%%%% Import from GeneralAlgebraNotes.tex %%%%%%%%%%%%%%%%%%%%
+
+% For consistency, we should agree upon some special notation:
+\newcommand{\cd}{\Crossedbox}  % contradiction
+% \newcommand{\<}{\ensuremath{\langle}}
+% \renewcommand{\>}{\ensuremath{\rangle}}
+
+% SET THEORY & RELATIONS
+% To specifiy that the symbol R is a binary relation use: x \rel{R} y
+\newcommand{\rel}[1]{\ensuremath{\mathbin{#1}}}
+\newcommand{\rR}{\ensuremath{\rel{R}}}  % or just x \rR y
+
+% \newcommand{\id}{\ensuremath{\operatorname{id}}}       % identity
+% \newcommand{\dom}{\ensuremath{\operatorname{dom}}}   % the domain of a relation
+% \newcommand{\fld}{\ensuremath{\operatorname{fld}}}   % the field of a relation
+\newcommand{\ran}{\ensuremath{\operatorname{ran}}}   % the range of a relation
+% \newcommand{\card}{\ensuremath{\operatorname{card}}} % cardinality
+\newcommand{\es}{\ensuremath{\varnothing}}
+% \renewcommand{\emptyset}{\ensuremath{\varnothing}}
+% \newcommand{\llb}{\ensuremath{\llbracket}}
+% \newcommand{\rrb}{\ensuremath{\rrbracket}}
+% \newcommand{\lb}{\ensuremath{[}}
+% \newcommand{\rb}{\ensuremath{]}}
+% \newcommand{\power}[1]{\ensuremath{\mathscr{P}(#1)}}  % power set
+% 
+% \newcommand{\gl}{\lambda}
+% 
+% % (slanted inequalities look much nicer than the standard ones)
+% \renewcommand{\leq}{\ensuremath{\leqslant}}   
+% \renewcommand{\nleq}{\ensuremath{\nleqslant}}
+% \renewcommand{\geq}{\ensuremath{\geqslant}}
+% \renewcommand{\ngeq}{\ensuremath{\ngeqslant}}
+% 
+% \newcommand{\bCon}{\ensuremath{\mathbf{Con}}}
+% \newcommand{\arity}{\ensuremath{\operatorname{arity}}}
+% \newcommand{\bSub}{\ensuremath{\mathbf{Sub}}}    % \bSub A = lattice of subalgebras of A
+% \newcommand{\Aut}{\ensuremath{\operatorname{Aut}}}     % automorphisms
+% \newcommand{\End}{\ensuremath{\operatorname{End}}}     % endomorphisms
+% 
+% % GROUPS
+% \newcommand{\GL}{\ensuremath{\operatorname{GL}}}
+% \newcommand{\PSL}{\ensuremath{\operatorname{PSL}}}
+% \newcommand{\Eq}{\ensuremath{\operatorname{Eq}}}
+% \newcommand{\bEq}{\ensuremath{\mathbf{Eq}}}
+% \newcommand{\core}{\ensuremath{\operatorname{core}}}
+% \newcommand{\subnormal}{\ensuremath{\trianglelefteqslant}}
+% \newcommand{\supnormal}{\ensuremath{\trianglerighteqslant}}
+% \newcommand{\notsubnormal}{\ensuremath{\ntrianglelefteqslant}}
+% 
+% \newcommand{\meet}{\ensuremath{\wedge}}
+% \newcommand{\two}{\ensuremath{\mathbf{2}}}
+% \newcommand{\join}{\ensuremath{\vee}}
+% \newcommand{\Meet}{\ensuremath{\bigwedge}}
+% \renewcommand{\Join}{\ensuremath{\bigvee}}
+\newcommand{\lub}{\ensuremath{\operatorname{lub}}}
+\newcommand{\glb}{\ensuremath{\operatorname{glb}}}
+\newcommand{\Sym}{\ensuremath{\operatorname{Sym}}}
+% 
+% % FIELDS
+% \newcommand{\ch}[1]{\text{char}(#1)}
+% 
+% 
+% % NAMES
+% \newcommand{\Tuma}{T\r{u}ma}
+% \newcommand{\Palfy}{P\'alfy}
+% \newcommand{\Pudlak}{Pudl\'ak}
+% 
+% \newcommand{\ex}{\marginpar[{\LARGE \Bicycle}]{{\LARGE \Bicycle}}}
+% 
+% % FONT SHORTCUTS
+% \newcommand{\bA}{\ensuremath{\mathbf{A}}}
+% \newcommand{\bB}{\ensuremath{\mathbf{B}}}
+% \newcommand{\bY}{\ensuremath{\mathbf{Y}}}
+% \newcommand{\bG}{\ensuremath{\mathbf{G}}}
+% \newcommand{\bM}{\ensuremath{\mathbf{M}}}
+% \newcommand{\bF}{\ensuremath{\mathbf{F}}}
+% \newcommand{\bE}{\ensuremath{\mathbf{E}}}
+% \newcommand{\bR}{\ensuremath{\mathbf{R}}}
+% 
+% \newcommand{\sA}{\ensuremath{\mathcal{A}}}
+% \newcommand{\scrA}{\ensuremath{\mathscr{A}}}
+% \newcommand{\sB}{\ensuremath{\mathcal{B}}}
+% \newcommand{\sC}{\ensuremath{\mathcal{C}}}
+\newcommand{\sL}{\ensuremath{\mathscr{L}}}
+% \newcommand{\sG}{\ensuremath{\mathscr{G}}}
+% \newcommand{\sP}{\ensuremath{\mathscr{P}}}
+% \newcommand{\sH}{\ensuremath{\mathscr{H}}}
+\newcommand\sX{\ensuremath{\mathscr{X}}}     %% Script symbol
+\newcommand\sY{\ensuremath{\mathscr{Y}}}     %% Script symbol
+% 
+% \newcommand{\F}{\ensuremath{\mathbb{F}}}   % an arbitrary field
+% \newcommand{\N}{\ensuremath{\mathbb{N}}}   % the natural numbers
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}   % the integers
+\newcommand{\R}{\ensuremath{\mathbb{R}}}   % the reals
+% \newcommand{\Q}{\ensuremath{\mathbb{Q}}}   % the rationals
+% \newcommand{\C}{\ensuremath{\mathbb{C}}}   % the complex plane
+% 
+% \renewcommand{\vec}[1]{\ensuremath{\mathbf{#1}}}
+% \newcommand\va{\ensuremath{\vec{a}}}
+% \newcommand\vb{\ensuremath{\vec{b}}}
+% \newcommand\vB{\ensuremath{\vec{B}}}
+% \newcommand\vc{\ensuremath{\vec{c}}}
+% \newcommand\vY{\ensuremath{\vec{Y}}}
+% \newcommand\vw{\ensuremath{\vec{x}}}
+% \newcommand\vu{\ensuremath{\vec{u}}}
+% \newcommand\vv{\ensuremath{\vec{v}}}
+% \newcommand\vx{\ensuremath{\vec{x}}}
+% \newcommand\vy{\ensuremath{\vec{y}}}
+% \newcommand\vz{\ensuremath{\vec{z}}}
+% \newcommand{\inverse}[1]{\ensuremath{#1^{-1}}}
+% \newcommand{\inv}[1]{\ensuremath{#1^{-1}}}
+% 
+% % DEFINITIONS
+% % New terms will be typeset as follows:
+% % \newcommand{\defn}[1]{{\bf \emph{#1}}}    % bold and italic
+% % (later we can change this to just bold, or just italic if we want)
+% % \newcommand{\defn}[1]{{\bf #1}}  % bold
+% % \newcommand{\defn}[1]{\emph{#1}}  % italic
+% 
+% % Both definitions and indexing (from the commutator book):
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%% (modified from the free lattice book)
+% %%% \defn usage:
+% %%%     This writes its argument in bold italics and also calls \index
+% %%%     for the index. eg.
+% %%%
+% %%%     \defn{join cover}
+% %%%
+% %%%     It has an optional second argument to specify the index
+% %%%     entry more precisely which works just like \index.
+% %%%
+% %%%     If you are writing about join covers (but they were defined
+% %%%     earlier, you can use \index{join cover}. This puts
+% %%%     nothing in the text, but makes an index entry.
+% %%%
+% 
+% \newcommand{\indexit}[1]{\index{#1|textit}}
+% \def\defn#1{\gdef\defnstring{#1}%
+%   %%% original:   \xdef\dodefnii{{\noexpand\em
+%   \xdef\dodefnii{{\noexpand\bfseries\noexpand\em
+%        \defnstring}\noexpand\indexit{\defnstring}\noexpand\makeatother}%
+%   \futurelet\nextthing\dodefn}
+% \def\dodefn{%
+%   \ifx\nextthing[\let\next=\dodefni
+%     \else\let\next=\dodefnii\fi
+%   \makeatletter
+%   \next}
+% 
+% \def\dodefni[#1]{%
+%   {\bfseries\em\defnstring}%
+%   \indexit{#1}%
+%   \makeatother}
+% 
+% 
+
+% RSF macros
+% \newcommand{\op}{\operatorname}
+\newcommand{\mono}{\rightarrowtail}
+\newcommand{\epi}{\twoheadrightarrow}    %% epimorphism
+\newcommand{\comp}{\circ}                %% function compsition
+% \newcommand{\alg}[1]{\mathbf{#1}}
+
+\newcommand{\mats}{\text{M}}        % inside math.
+
+
+
+
+%% VVVVVV BEGIN BETTER MARGIN NOTES  VVVVVV
+%%
+%% This section of macros was added to provide for better margin notes.
+%% SEE:  http://tex.stackexchange.com/questions/9796/how-to-add-todo-notes
+%%
+\usepackage{xargs}           % Use more than one optional parameter in a new commands
+\usepackage{datetime}
+\newdateformat{specialdate}{\twodigit\year-\twodigit\month-\twodigit\day}
+\date{\specialdate\today}
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+
+%% William's margin notes:  \will{this is a note}
+\newcommandx{\wjd}[2][1=]{%
+  \todo[linecolor=purple,backgroundcolor=purple!25,bordercolor=purple,#1]%
+       {{\bf wjd} \specialdate\today: #2}
+}
+
+%% Peter's margin notes:  \peter{this is a note}
+\newcommandx{\peter}[2][1=]{
+  \todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]%
+       {{\bf pm} \specialdate\today: #2}
+}
+
+%% Nik's margin notes:  \nik{this is a note}
+\newcommandx{\nik}[2][1=]{
+  \todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]%
+       {{\bf nr} \specialdate\today: #2}
+}
+
+\newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
+%% ^^^^^^^^^ END BETTER MARGIN NOTES ^^^^^^^^^^^^^^
+%%
+
+
+\usepackage{ifthen}
+%%%%%%%%%%%%%%%%% input file info %%%%%%%%%%%%%%%%%%%%%5
+%% INCLUDE input file information by commenting out `\setboolean{inputinfo}{false}`
+%% OMIT input file info by uncommenting `\setboolean{inputinfo}{false}`:
+   \newboolean{inputinfo}
+   \setboolean{inputinfo}{true}  % set to true to include input file info
+%%   \setboolean{inputinfo}{false}
+   \newcommand{\inputinfo}[1]{\ifthenelse{\boolean{inputinfo}}{%
+\par\vskip2mm\noindent{\tt--- input file: #1 ----------------------------- }\par}{}}
+%%
+%% pagebreaks between input files:
+   \newboolean{pb}
+   \setboolean{pb}{true}  % set to true to include pagebreaks between input files
+   \setboolean{pb}{false}
+   \newcommand{\pbk}{\ifthenelse{\boolean{pb}}{\pagebreak}{}}
+
+
+%% All exercises can be excluded by setting the exercises variable to false.
+\newboolean{exercises}
+\setboolean{exercises}{true}
+%% To remove exercises, uncomment `\setboolean{exercises}{false}`
+%%\setboolean{exercises}{false}  % set to false to exclude exercises
+\newcommand{\Exercise}[1]{\ifthenelse{\boolean{exercises}}{\begin{exercise}#1\end{exercise}}{}}
